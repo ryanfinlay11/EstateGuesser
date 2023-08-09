@@ -1,3 +1,3 @@
 function play() {
-  alert("test");
+  alert("Coming Soon!");
 }

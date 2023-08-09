@@ -67,8 +67,14 @@ body {
     overflow: hidden;
 }
 
-@media (max-height: 649px) {
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+  body {
+    overflow-y: scroll;
+  }
+  .container {
+    margin-bottom: 100px;
+  }
   .footer {
-      display: none;
+    display: none;
   }
 }
