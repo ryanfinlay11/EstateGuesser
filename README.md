@@ -1,2 +1,1 @@
-# EstateGuesser
-Real estate price guessing game.
+<img src="images/biglogo.png" alt="Estate Guesser">
