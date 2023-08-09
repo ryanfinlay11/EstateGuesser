@@ -37,6 +37,7 @@
   max-height: 30px;
   max-width: 30px;
   margin-left: 15px;
+  filter: brightness(0);
 }
 
 .linkedin {
