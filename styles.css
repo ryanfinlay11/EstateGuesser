@@ -9,15 +9,15 @@
 .main-logo {
   display: block;
   margin-top: 10vh;
+  width: 100%;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .play-button {
   margin: 20px 0;
-  background-color: green;
+  background-color: darkslategrey;
   color: white;
+  font-family: Roboto;
   font-size: 30px;
   padding: 10px 20px;
   border: none;
@@ -25,8 +25,36 @@
   border-radius: 20px;
   cursor: pointer;
   max-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.github {
+  max-height: 30px;
+  max-width: 30px;
+  margin-left: 15px;
+}
+
+.linkedin {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.credit-name {
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
