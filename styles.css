@@ -8,7 +8,7 @@
 
 .main-logo {
   display: block;
-  margin-top: 10vh;
+  margin-top: 5vh;
   width: 100%;
   max-width: 500px;
 }
@@ -65,4 +65,10 @@ body {
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
+}
+
+@media (max-height: 649px) {
+  .footer {
+      display: none;
+  }
 }
