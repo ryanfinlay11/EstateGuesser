@@ -18,7 +18,7 @@
   background-color: darkslategrey;
   color: white;
   font-family: Roboto;
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -51,7 +51,7 @@
 
 .footer {
   position: absolute;
-  bottom: 2%;
+  bottom: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
