@@ -1,5 +1,5 @@
 <div align="center">
   <img src="images/biglogo.png" alt="Estate Guesser">
   <br>
-  [<img src="https://www.pngarts.com/files/3/Play-Now-Button-PNG-Transparent-Image.png" alt="Play Now">(https://ryanfinlay11.github.io/EstateGuesser/)
+  [<img src="https://freepngimg.com/thumb/play_now_button/25551-9-play-now-button-file-thumb.png" alt="Play Now">](https://ryanfinlay11.github.io/EstateGuesser/)
 </div>
