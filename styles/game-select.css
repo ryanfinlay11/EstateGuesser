@@ -152,7 +152,7 @@ body {
 /*All portrait touch devices*/
 @media (pointer:none), (pointer:coarse) and (orientation: portrait) and (max-width: 500px) {
   .select-location {
-    font-size: 280%;
+    font-size: 270%;
   }
 
   .grid-container {
