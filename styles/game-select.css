@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.select-location {
+  font-family: Roboto;
+  color: white;
+  font-size: 75px;
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  font-weight: bolder;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 1;
+  /*margin: auto;*/
+}
+
+.city-block {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.city-block::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(0.5);
+  transition: filter 0.4s ease;
+}
+
+/*Change to .city-block:hover and .city-block:hover::before when more locations are added*/
+#toronto:hover {
+  transform: scale(1.05);
+}
+
+#toronto:hover::before {
+  filter: brightness(1);
+}
+
+.city-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* ensures text is always on top */
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+}
+
+#toronto::before {
+  background-image: url("https://www.prepareforcanada.com/wp-content/uploads/Torronto-Main.jpg");
+}
+
+#richmondhill::before {
+  background-image: url("https://www.teamzold.com/files/team-zold-communities-real-estate-RichmondHill-ON.jpg");
+}
+
+#vaughan::before {
+  background-image: url("https://www.vaughan.ca/sites/default/files/styles/max_1300x1300/public/2023-03/OPR_Shaping_WEB.jpg.webp?itok=WrDR4PrW"); 
+}
+
+#oakville::before {
+  background-image: url("https://media.istockphoto.com/id/1283255609/photo/aerial-oakville-townscape-and-bill-hill-promenade-park-at-the-lakeside-of-lake-ontario.jpg?s=612x612&w=0&k=20&c=oj0Xk7i4d2cG0c_CFtqk8i-ICe-Dhl1OLnd0XYFqUHw="); 
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*
+.linkedin {
+  max-height: 30px;
+  max-width: 30px;
+}
+*/
+
+.github {
+  max-height: 30px;
+  max-width: 30px;
+  /*margin-left: 15px;*/
+  filter: brightness(0);
+}
+
+.credit-name {
+  font-family: Roboto;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+body {
+    background-image: url("/images/house.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(30, 30, 30);
+    overflow-x: hidden;
+}
+
+/*All touch devices*/
+@media (pointer:none), (pointer:coarse) {
+  #toronto:hover {
+    transform: scale(1);
+  }
+
+  #toronto::before {
+    filter: brightness(1);
+  }
+}
+
+/*All portrait touch devices*/
+@media (pointer:none), (pointer:coarse) and (orientation: portrait) and (max-width: 500px) {
+  .select-location {
+    font-size: 300%;
+  }
+
+  .grid-container {
+    min-height: 1500px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .city-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
