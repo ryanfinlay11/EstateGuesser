@@ -127,7 +127,7 @@
   margin-top: 10px;
 }
 
-body {
+html, body {
     background-image: url("../images/house.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,6 +135,9 @@ body {
     background-attachment: fixed;
     background-color: black;
     overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /*All touch devices*/
