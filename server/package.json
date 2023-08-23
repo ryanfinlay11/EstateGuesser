@@ -1,0 +1,26 @@
+{
+  "name": "estateguesser",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img src=\"images/biglogo.png\" alt=\"Estate Guesser\">\r </div>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanfinlay11/EstateGuesser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanfinlay11/EstateGuesser/issues"
+  },
+  "homepage": "https://github.com/ryanfinlay11/EstateGuesser#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
