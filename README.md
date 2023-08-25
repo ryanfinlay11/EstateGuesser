@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="images/biglogo.png" alt="Estate Guesser">
+  <img src="./public/images/biglogo.png" alt="Estate Guesser">
 </div>
