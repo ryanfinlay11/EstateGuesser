@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/404.html"
+        "function": "app"
       }
     ],
     "cleanUrls": true
@@ -34,8 +34,11 @@
       "port": 5000
     },
     "ui": {
-      "enabled": false
+      "enabled": true
     },
-    "singleProjectMode": true
+    "singleProjectMode": true,
+    "database": {
+      "port": 9000
+    }
   }
 }
