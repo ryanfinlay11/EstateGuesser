@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 
 //If db is in emulation mode, initialize emulation db
+/*
 if (process.env.FUNCTIONS_EMULATOR) {
     const databaseURL = `http://localhost:9000?ns=${process.env.GCLOUD_PROJECT}`;
     admin.initializeApp({
@@ -12,19 +13,22 @@ if (process.env.FUNCTIONS_EMULATOR) {
 } else {
     admin.initializeApp();
 }
-
+*/
 const app = express();
 
 app.use(express.static(path.join(__dirname, '../public')));
 
 // Changes play location parameter from ?=... into /...
 app.get('/play/:location', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'play.html'));
+    console.log("Doing app.get");
+    res.sendFile(path.join(__dirname,'/play.html'));
+    //res.sendFile(path.join(__dirname,'play.html'));
+    //res.sendFile(path.join(__dirname, '../public', 'play.html'));
 });
 
 // Returns 5 locations
 // Call with estateguesser.ca/api/(location)
-app.get('/api/:location', (req, res) => {
+//app.get('/api/:location', (req, res) => {
     /*
     const location = req.params.location;
     const db = admin.database();
@@ -38,8 +42,8 @@ app.get('/api/:location', (req, res) => {
         res.status(500).send(error);
   });
   */
- res.send( req.params.location + " data here." );
-});
+// res.send( req.params.location + " data here." );
+//});
 
 // If no file was found, then redirect to the home page
 app.use((req, res) => {
