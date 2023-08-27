@@ -6,7 +6,7 @@ if (chosenLocation === "tor") window.location.href = "/";
 document.getElementById("location-name").textContent = chosenLocation;
 
 //Test read from test db
-/*
+
 fetch(`/api/toronto`)
     .then(response => response.json())
     .then(data => {
@@ -17,4 +17,3 @@ fetch(`/api/toronto`)
     .catch(error => {
         console.error("Error fetching data:", error);
     });
-*/
