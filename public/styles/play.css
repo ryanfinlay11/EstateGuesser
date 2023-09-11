@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://cdn.discordapp.com/attachments/1005346113043316766/1145113615498743929/house.jpg");
+    background-image: url("https://cdn.discordapp.com/attachments/1005346113043316766/1150735583740706826/house.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,13 +12,41 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 0;
 }
 
-.game-title {
-    text-align: center;
-    margin-bottom: 20px;
+.property-title {
+    font-family: Roboto;
     color: white;
+    font-size: 60px;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 1vh;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.7);
+    border: 5px solid green;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto; 
+}
+
+#timer-text {
+    font-family: Roboto;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
 
 .game-content {
@@ -27,55 +55,330 @@ body {
     align-items: center;
 }
 
+.image-controller {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.arrow-button{
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.arrow-button:hover {
+    transform: scale(1.1);
+}
+
 .property-image {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.883);
+    border-radius: 15px;
+}
+
+.property-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bedrooms-number, .bathrooms-number {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    height: 50px;
+    margin-bottom: 0;
+}
+
+#bedrooms-number-digit, #bathrooms-number-digit {
+    font-family: Roboto;
+    font-size: 35px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.bedrooms-info, .bathrooms-info {
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+.bedrooms-icon, .bathrooms-icon {
+    height: 50px;
+    width: 50px;
+    margin-top: 0;
+    filter: brightness(0);
+}
+
+#bedrooms-number-text, #bathrooms-number-text {
+    font-family: Roboto;
+    font-size: 20px;
+    color: black;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+
+.dollar-sign {
+    position: absolute;
+    left: 20px;
+    top: -11px;
+    font-family: Roboto;
+    color: white;
+    font-size: 45px;
+    line-height: 1;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .guess-input {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
 #price-guess {
-    padding: 10px;
-    font-size: 16px;
-}
-
-#submit-guess {
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-#feedback-message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: red;
-}
-
-.footer {
-    margin-top: 30px;
+    padding: 5px;
+    font-size: 40px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.455);
+    font-family: Roboto;
+    color: white;
+    border-radius: 10px;
+    border: black solid 4px;
     text-align: center;
 }
 
-.logos {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+
+#submit-guess {
+    margin: 20px 0;
+    background-color: green;
+    color: white;
+    font-family: Roboto;
+    font-size: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: transform 0.3s ease;
 }
+
+#submit-guess[disabled] {
+    background-color: black; /* or any shade of grey you prefer */
+    cursor: not-allowed;   /* this will show a 'not allowed' cursor */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+/*
+.linkedin {
+  max-height: 30px;
+  max-width: 30px;
+}
+*/
 
 .github {
-    width: 30px;
-    height: 30px;
-}
+    max-height: 30px;
+    max-width: 30px;
+    /*margin-left: 15px;*/
+    filter: brightness(0);
+  }
 
 .credit-name {
+    font-family: Roboto;
+    font-size: 20px;
     margin-top: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.815); 
+    z-index: 1000; /* Ensure it appears on top */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.754);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 7px solid black;
+    border-radius: 50px;
+    max-width: 80%;
+    text-align: center;
+    font-family: Roboto;
+    font-size: x-large;
+    color: white;
+}
+
+#start-button, #next-button, #play-again-button, #play-new-button, #see-results-button {
+    margin: 20px 0;
+    background-color: green;
+    color: white;
+    font-family: Roboto;
+    font-size: 45px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#see-results-button {
+    background-color: rgb(0, 0, 200);
+}
+
+#start-button:hover {
+    transform: scale(1.05);
+}
+
+/*Post round modal*/
+.points-gained, .total-gained {
+    font-family: Roboto;
+    font-size: 75px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#points-gained-num, #total-points-num {
+    color: rgb(0, 171, 0);
+    color: white;
+    color: red;
+    color: #FFD700;
+}
+
+.price-title {
+    font-style: italic;
+}
+
+#listing-url {
+    font-family: Roboto;
+    color: lightblue;
+    text-decoration: underline;
+}
+
+/*End game modal*/
+#play-new-button {
+    background-color: rgb(66, 66, 66);
+}
+
+/* Times up modal */
+.times-up {
+    font-family: Roboto;
+    font-size: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: red;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .image-controller {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .property-image {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    #left-arrow {
+        grid-row: 2;
+        justify-self: start;
+        margin-left: 10px;
+    }
+
+    #right-arrow {
+        grid-row: 2;
+        justify-self: end;
+        margin-right: 10px;
+    }
+
+    #price-guess {
+        max-width: 340px;
+        font-size: 30px;
+    }
+
+    .dollar-sign {
+        font-size: 35px;
+        top: -7px;
+    }
+
+    .modal {
+        overflow-y: scroll;
+    }
+
+    .modal-content {
+        position: absolute;
+        width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-height: 800px) {
+    .points-gained {
+        font-size: 65px;
+    }
+    h2, h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (pointer:none), (pointer:coarse) {
+    .arrow-button:hover {
+        transform: scale(1);
+    }
+}
+
+@keyframes strobe {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.strobe-effect {
+    animation: strobe 0.33s infinite;
 }

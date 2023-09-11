@@ -4,15 +4,12 @@ const express = require('express');
 const path = require('path');
 
 //If db is in emulation mode, initialize emulation db
-
 if (process.env.FUNCTIONS_EMULATOR) {
-    console.log("Using emulation db");
     const databaseURL = `http://localhost:9000?ns=${process.env.GCLOUD_PROJECT}`;
     admin.initializeApp({
         databaseURL: databaseURL
     });
 } else {
-    console.log("Using prod db");
     admin.initializeApp();
 }
 
@@ -25,8 +22,7 @@ app.get('/play/:location', (req, res) => {
     res.sendFile(path.join(__dirname,'play.html'));
 });
 
-// Returns 5 locations
-// Call with estateguesser.ca/api/(location)
+// Returns 5 properties from (location)
 app.get('/api/:location', (req, res) => {
     const location = req.params.location;
     const db = admin.database();
