@@ -1,18 +1,15 @@
 const chosenLocation = window.location.pathname.split('/').pop();
 console.log("JS file loaded successfully! Location = " + chosenLocation);
-const locations = {"toronto": "Toronto"}
+const locations = {"toronto": "Toronto"};
 
-/*
-if (!locations.includes(chosenLocation)) {
+if (!locations.hasOwnProperty(chosenLocation)) {
     console.log(chosenLocation);
     console.log("Not a valid location");
-    //window.location.href = "/";
+    window.location.href = "/";
 }
-*/
 
 const introModal = document.getElementById('introModal');
-//document.getElementById("locationInstruction").textContent += locations[chosenLocation];
-document.getElementById("locationInstruction").textContent += "Toronto";
+document.getElementById("locationInstruction").textContent += locations[chosenLocation];
 
 const postRoundModal = document.getElementById('postRoundModal');
 const pointsGained = document.getElementById('points-gained-num');
@@ -30,7 +27,7 @@ const propertyTitle = document.getElementById('property-title');
 const inputBox = document.getElementById('price-guess');
 const submitGuessButton = document.getElementById('submit-guess');
 
-let timeLeft = 5 * 1;
+let timeLeft = 5 * 60;
 let interval;
 let currentRound = 1;
 let totalPointsNum = 0;
@@ -57,7 +54,7 @@ function submitGuess() {
         nextButton.style.backgroundColor = "rgb(0, 0, 200)";
     }
     pauseTimer();
-    animateScore(1999, 2000);
+    animateScore(1000, pointsGained, 1000, "round", 2000);
 }
 
 function next() {
@@ -67,6 +64,7 @@ function next() {
     if (currentRound > 5 || timeLeft <= 0) {
         hide(timesUpModal);
         show(endGameModal);
+        animateScore(4999, totalPoints, 5000, "game", 3000);
     }
     else {
         startTimer()
@@ -119,7 +117,7 @@ function hide(modal){
     modal.style.display = 'none';
 }
 
-function animateScore(finalScore, duration) {
+function animateScore(finalScore, location, maxScore, type, duration) {
     const startTimestamp = performance.now();
     const startScore = 0;
 
@@ -127,34 +125,41 @@ function animateScore(finalScore, duration) {
         return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
     }
 
+    function getColorForScore(score, type) {
+        if (type === 'round') {
+            if (score < 200) return 'red';
+            if (score < 800) return 'lightblue';
+            if (score < 1000) return 'green';
+            return '#FFD700';
+        } else {
+            if (score < 1500) return 'red';
+            if (score < 4000) return 'lightblue';
+            if (score < 5000) return 'green';
+            return '#FFD700';
+        }
+    }
+
     function updateScore(currentTime) {
         const elapsed = currentTime - startTimestamp;
         if (elapsed < duration) {
             const progress = easeOut(elapsed / duration);
             const currentScore = Math.round(progress * (finalScore - startScore) + startScore);
-            pointsGained.textContent = currentScore;
-            pointsGained.style.color = getColorForScore(currentScore);
+            location.textContent = currentScore;
+            location.style.color = getColorForScore(currentScore, type);
             requestAnimationFrame(updateScore);
         } else {
-            pointsGained.textContent = finalScore;
-            pointsGained.style.color = getColorForScore(finalScore);
-            if (finalScore === 1000) {
-                pointsGained.classList.add('strobe-effect');
+            location.textContent = finalScore;
+            location.style.color = getColorForScore(finalScore, type);
+            if (finalScore === maxScore) {
+                location.classList.add('strobe-effect');
                 setTimeout(() => {
-                    pointsGained.classList.remove('strobe-effect');
+                    location.classList.remove('strobe-effect');
                 }, 1000);
             }
         }
     }
 
     requestAnimationFrame(updateScore);
-}
-
-function getColorForScore(score) {
-    if (score < 200) return 'red';
-    if (score < 800) return 'lightblue';
-    if (score < 1000) return 'green';
-    return '#FFD700';
 }
 
 inputBox.addEventListener('input', function() {
