@@ -66,6 +66,7 @@ body {
 .arrow-button{
     height: 100px;
     width: 100px;
+    touch-action: manipulation;
     transition: transform 0.3s ease;
 }
 
@@ -365,6 +366,18 @@ body {
     h2, h3 {
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    p {
+        font-size: 80%;
+    }
+    h1 {
+        font-size: 175%;
+    }
+}
+
+@media (max-width: 376px) {
+    #property-title {
+        font-size: 50px;
     }
 }
 

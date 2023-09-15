@@ -22,18 +22,37 @@ app.get('/play/:location', (req, res) => {
     res.sendFile(path.join(__dirname,'play.html'));
 });
 
-// Returns 5 properties from (location)
-app.get('/api/:location', (req, res) => {
-    const location = req.params.location;
-    const db = admin.database();
-    const ref = db.ref("/toronto");
-    ref.once("value").then(snapshot => {
-        const data = snapshot.val();
-        res.send(data);
-    }).catch(error => {
-        console.error("Error reading from database:", error);
-        res.status(500).send(error);
-  });
+// Returns 5 random properties from (location)
+app.get('/api/:location', async (req, res) => {
+    try {
+        const location = req.params.location;
+        const locations = ["toronto"];
+        if (!locations.includes(location)) return res.status(404).send("Location not found");
+        const db = admin.database();
+        const numOfProperties = (await db.ref(`/${location}/numOfProperties`).once("value")).val();
+        let randomNums = [];
+        let properties = {};
+        for (let i = 0; i < 5; i++) {
+            while (true) {
+                let randomNum = Math.floor(Math.random() * numOfProperties) + 1;
+                if (!randomNums.includes(randomNum)) {
+                    randomNums.push(randomNum);
+                    break;
+                }
+            }
+            properties[`${randomNums[i]}`] = (await db.ref(`/${location}/properties/property${randomNums[i]}`).once("value")).val();
+        }
+        res.send(properties);
+    } catch (err) {
+        console.log(err);
+        console.log("Error getting 5 properties");
+        res.status(500).send(err);
+    }
+});
+
+// Checks for wrong api call
+app.get('/api/:location/*', (req, res) => {
+    res.redirect('/');
 });
 
 // If no file was found, then redirect to the home page
