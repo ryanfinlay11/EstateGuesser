@@ -26,10 +26,10 @@ app.get('/play/:location', (req, res) => {
 app.get('/api/:location', async (req, res) => {
     try {
         const location = req.params.location;
-        const locations = ["toronto"];
-        if (!locations.includes(location)) return res.status(404).send("Location not found");
+        const locations = ['toronto'];
+        if (!locations.includes(location)) return res.status(404).send('Location not found');
         const db = admin.database();
-        const numOfProperties = (await db.ref(`/${location}/numOfProperties`).once("value")).val();
+        const numOfProperties = (await db.ref(`/${location}/numOfProperties`).once('value')).val();
         let randomNums = [];
         let properties = {};
         for (let i = 0; i < 5; i++) {
@@ -40,7 +40,7 @@ app.get('/api/:location', async (req, res) => {
                     break;
                 }
             }
-            properties[`${randomNums[i]}`] = (await db.ref(`/${location}/properties/property${randomNums[i]}`).once("value")).val();
+            properties[`${randomNums[i]}`] = (await db.ref(`/${location}/properties/property${randomNums[i]}`).once('value')).val();
         }
         res.send(properties);
     } catch (err) {

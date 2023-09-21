@@ -183,8 +183,9 @@ body {
 }
 
 #submit-guess[disabled] {
-    background-color: black; /* or any shade of grey you prefer */
-    cursor: not-allowed;   /* this will show a 'not allowed' cursor */
+    background-color: black;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .footer {
@@ -257,6 +258,11 @@ body {
     text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
+#start-button[disabled] {
+    background-color: grey;
+    pointer-events: none;
+}
+
 #see-results-button {
     background-color: rgb(0, 0, 200);
 }
@@ -288,7 +294,6 @@ body {
 #listing-url {
     font-family: Roboto;
     color: lightblue;
-    text-decoration: underline;
 }
 
 /*End game modal*/
