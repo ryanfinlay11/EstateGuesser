@@ -81,6 +81,8 @@ function submitGuess() {
 
     totalPointsNum += roundScore;
     inputBox.value = '';
+    setText(bedroomText, 'Bedroom');
+    setText(bathroomText, 'Bathroom');
     if (currentRound === 5) {
         nextButton.innerHTML = 'See<br>Results';
         nextButton.style.backgroundColor = 'rgb(0, 0, 200)';
@@ -89,23 +91,14 @@ function submitGuess() {
 
 function next() {
     hide(postRoundModal);
-    console.log('Next property');
     currentRound++;
     if (currentRound > 5 || timeLeft <= 0) {
         hide(timesUpModal);
         show(endGameModal);
-        setText(totalPoints, 5000, getColorForScore(5000, 'total'));
+        setText(totalPoints, totalPointsNum, getColorForScore(totalPointsNum, 'total'));
+    } else {
+        startRound();
     }
-    else {
-        startTimer();
-        setText(propertyTitle, 'Property ' + currentRound + '/5');
-    }
-}
-
-function timesUp() {
-    console.log('Time\'s up!');
-    nextButton.style.backgroundColor = 'rgb(0, 0, 200)';
-    show(timesUpModal);
 }
 
 //Helper functions
@@ -116,12 +109,11 @@ function startRound() {
     propertyImgArray = currentProperty.imageUrls;
     currentImageIndex = 0;
     setImage(propertyImgArray[currentImageIndex]);
-    setText(bedroomNum, currentProperty.bedrooms.charAt(0));
+    setText(bedroomNum, currentProperty.bedrooms.match(/^(\d+)/));
     if (bedroomNum.textContent !== "1") addText(bedroomText, 's');
-    setText(bathroomNum, currentProperty.bathrooms.charAt(0));
-    if (bedroomNum.textContent !== "1") addText(bathroomText, 's');
+    setText(bathroomNum, currentProperty.bathrooms.match(/^(\d+)/));
+    if (bathroomNum.textContent !== "1") addText(bathroomText, 's');
     startTimer();
-    console.log(currentProperty.listingPrice);
 }
 
 async function getProperties() {
@@ -168,15 +160,12 @@ function startTimer(){
         if (timeLeft === 120) {
             timer.style.backgroundColor = 'rgba(255, 166, 0, 0.7)';
             timer.style.border = '5px solid orange';
-        }
-        else if (timeLeft === 30) {
+        } else if (timeLeft === 30) {
             timer.style.backgroundColor = 'rgba(255, 0, 0, 0.7)';
             timer.style.border = '5px solid red';
-        }
-        else if (timeLeft === 10) {
+        } else if (timeLeft === 10) {
             timer.classList.add('strobe-effect');
-        }
-        else if (timeLeft <= 0) {
+        } else if (timeLeft <= 0) {
             timer.classList.remove('strobe-effect');
             pauseTimer();
             timesUp();
@@ -186,6 +175,11 @@ function startTimer(){
 
 function pauseTimer(){
     clearInterval(interval);
+}
+
+function timesUp() {
+    nextButton.style.backgroundColor = 'rgb(0, 0, 200)';
+    show(timesUpModal);
 }
 
 function show(modal){
@@ -221,11 +215,14 @@ function getElement(id) {
 function calculateScore(guess, actual) {
     guess = parseInt(guess.replace(/\D/g, ''));
     actual = parseInt(actual.replace(/\D/g, ''));
-    let errorPercentage = Math.abs((guess - actual) / actual) * 100;
-    if (guess > actual) errorPercentage = errorPercentage / 1.5;
-    errorPercentage = Math.min(errorPercentage, 100);
-    if (errorPercentage < 5) return 1000;
-    return Math.round(Math.min(0.0642188 * errorPercentage * errorPercentage - 17.4424 * errorPercentage + 1102.27, 1000));
+    const errorPercentage = ((guess - actual) / actual) * 100;
+    let score;
+    if (errorPercentage < -10) score = (100/9) * errorPercentage + 10000/9;
+    else if (errorPercentage >= -10 && errorPercentage <= 10) score = 1000;
+    else if (errorPercentage > 10 && errorPercentage <= 100) score = 1100 - 10 * errorPercentage;
+    else if (errorPercentage > 100 && errorPercentage <= 200) score = 200 - errorPercentage;
+    else score = 0;
+    return Math.round(score);
 }
 
 function animateScore(finalScore) {

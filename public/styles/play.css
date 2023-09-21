@@ -79,6 +79,7 @@ body {
     height: auto;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.883);
     border-radius: 15px;
+    max-height: 550px;
 }
 
 .property-info {
