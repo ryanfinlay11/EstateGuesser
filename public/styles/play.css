@@ -82,6 +82,19 @@ body {
     max-height: 550px;
 }
 
+#tap-instruction {
+    font-family: Roboto;
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 50%; /* center vertically */
+    
+    padding: 10px; /* optional padding */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .property-info {
     display: flex;
     flex-direction: row;
