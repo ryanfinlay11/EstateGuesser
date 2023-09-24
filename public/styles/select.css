@@ -26,7 +26,6 @@
   margin-left: auto;
   margin-right: auto;
   aspect-ratio: 1;
-  /*margin: auto;*/
 }
 
 .city-block {
@@ -64,6 +63,14 @@
   filter: brightness(1);
 }
 
+#vaughan:hover {
+  transform: scale(1.05);
+}
+
+#vaughan:hover::before {
+  filter: brightness(1);
+}
+
 .city-text {
   position: absolute;
   top: 50%;
@@ -83,11 +90,11 @@
 }
 
 #richmondhill::before {
-  background-image: url("https://www.teamzold.com/files/team-zold-communities-real-estate-RichmondHill-ON.jpg");
+  background-image: url("https://cdn.discordapp.com/attachments/1005346113043316766/1154704738571530291/Capture.PNG");
 }
 
 #vaughan::before {
-  background-image: url("https://www.vaughan.ca/sites/default/files/styles/max_1300x1300/public/2023-03/OPR_Shaping_WEB.jpg.webp?itok=WrDR4PrW"); 
+  background-image: url("https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQGzPqY9iZEWyvyMOHhrQTc_MMY3AVxWHKlTtJB__ngCW8BYYfmOts3ILQasYuoi_SZ2-T1q5MtgCJwgsQ4u0uHYTlGc-iA"); 
 }
 
 #oakville::before {
@@ -145,6 +152,14 @@ body {
   }
 
   #toronto::before {
+    filter: brightness(1);
+  }
+
+  #vaughan:hover {
+    transform: scale(1);
+  }
+
+  #vaughan::before {
     filter: brightness(1);
   }
 }

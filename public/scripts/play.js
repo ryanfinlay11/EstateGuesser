@@ -1,5 +1,5 @@
 const chosenLocation = window.location.pathname.split('/').pop();
-const locations = {'toronto': 'Toronto'};
+const locations = {'toronto': 'Toronto', 'vaughan': 'Vaughan'};
 
 const introModal = getElement('introModal');
 
@@ -32,6 +32,9 @@ let propertyImgArray = [];
 let currentImageIndex = 0;
 let properties;
 let propertyIDs = [];
+let timerGoing = false;
+let isKeyPressed = false;
+let tapInstructionsFaded = false;
 
 initialize();
 
@@ -55,6 +58,7 @@ function start() {
 }
 
 function changeImage(direction) {
+    fadeTapInstructions();
     if (direction === 'left') {
         currentImageIndex--;
         if (currentImageIndex < 0) currentImageIndex = propertyImgArray.length - 1;
@@ -109,9 +113,9 @@ function startRound() {
     propertyImgArray = currentProperty.imageUrls;
     currentImageIndex = 0;
     setImage(propertyImgArray[currentImageIndex]);
-    setText(bedroomNum, currentProperty.bedrooms.match(/^(\d+)/));
+    setText(bedroomNum, currentProperty.bedrooms.replace(/\s/g, ''));
     if (bedroomNum.textContent !== "1") addText(bedroomText, 's');
-    setText(bathroomNum, currentProperty.bathrooms.match(/^(\d+)/));
+    setText(bathroomNum, currentProperty.bathrooms.replace(/\s/g, ''));
     if (bathroomNum.textContent !== "1") addText(bathroomText, 's');
     startTimer();
 }
@@ -151,6 +155,7 @@ async function getProperties() {
 }
 
 function startTimer(){
+    timerGoing = true;
     interval = setInterval(function() {
         timeLeft--;
         const minutes = Math.floor(timeLeft / 60);
@@ -175,6 +180,7 @@ function startTimer(){
 
 function pauseTimer(){
     clearInterval(interval);
+    timerGoing = false;
 }
 
 function timesUp() {
@@ -259,6 +265,18 @@ function animateScore(finalScore) {
     requestAnimationFrame(updateScore);
 }
 
+function fadeTapInstructions() {
+    if (tapInstructionsFaded) return;
+    tapInstructionsFaded = true;
+    const tapInstructions = document.querySelectorAll('.tap-instruction');
+    tapInstructions.forEach(function(el) {
+        el.style.opacity = 0;
+        el.addEventListener('transitionend', function() {
+            el.style.display = 'none';
+        }, { once: true })
+    });
+}
+
 function getColorForScore(score, type) {
     if (type === 'round') {
         if (score < 200) return 'red';
@@ -295,4 +313,26 @@ inputBox.addEventListener('input', function() {
         submitGuessButton.setAttribute('disabled', 'disabled');
     }
     this.value = value;
+});
+
+document.addEventListener('keydown', function(event) {
+    if (isKeyPressed | !timerGoing) return;
+    switch (event.key) {
+        case 'ArrowLeft':
+            changeImage('left');
+            break;
+        case 'ArrowRight':
+            changeImage('right');
+            break;
+    }
+    isKeyPressed = true;
+});
+
+document.addEventListener('keyup', function() {
+    isKeyPressed = false;
+});
+
+propertyImage.addEventListener('click', function(event) {
+    if (event.offsetX < this.offsetWidth / 2) changeImage('left');
+    else changeImage('right');
 });

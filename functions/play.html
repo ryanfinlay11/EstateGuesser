@@ -19,10 +19,9 @@
       </div>
       <div class="game-content">
         <div class="image-controller">
-          <p id="tap-instruction">Tap to<br>Change Image</p>
-          <img src="https://cdn-icons-png.flaticon.com/512/60/60775.png" class="arrow-button" id="left-arrow" onclick="changeImage('left')" draggable="false"/>
+          <p class="tap-instruction" id="tap-instruction-left" onclick="changeImage('left')">Tap to<br>Change<br>Image</p>
           <img src="https://cdn.realtor.ca/listing/TS638249457455270000/reb82/highres/2/c5745952_1.jpg" class="property-image" id="property-image" draggable="false"/>
-          <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" class="arrow-button" id="right-arrow" onclick="changeImage('right')" draggable="false"/>
+          <p class="tap-instruction" id="tap-instruction-right" onclick="changeImage('right')">Tap to<br>Change<br>Image</p>
         </div>
         <div class="property-info">
           <div class="bedrooms-info">
@@ -59,7 +58,7 @@
         <p class="credit-name">Developed by Ryan Finlay</p>
       </div>
     </div>
-<!-- 
+
     <div id="introModal" class="modal">
       <div class="modal-content">
           <h1>How to Play</h1>
@@ -73,7 +72,7 @@
           <button id="start-button" onclick="start()">Loading...</button>
       </div>
     </div>
-  -->
+
     <div id="postRoundModal" class="modal" style="display: none;">
       <div class="modal-content">
           <h1 class="points-gained">+<span id="points-gained-num">1000</span> points</h1>

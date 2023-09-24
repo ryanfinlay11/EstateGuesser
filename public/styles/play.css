@@ -9,6 +9,10 @@ body {
     overscroll-behavior-y: none;
 }
 
+img {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -56,22 +60,9 @@ body {
 }
 
 .image-controller {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    position: relative;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.arrow-button{
-    height: 100px;
-    width: 100px;
-    touch-action: manipulation;
-    transition: transform 0.3s ease;
-}
-
-.arrow-button:hover {
-    transform: scale(1.1);
 }
 
 .property-image {
@@ -82,17 +73,31 @@ body {
     max-height: 550px;
 }
 
-#tap-instruction {
+.property-image:hover {
+    cursor: pointer;
+}
+
+.tap-instruction {
     font-family: Roboto;
-    font-size: 20px;
-    color: grey;
+    font-size: 25px;
     text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-    top: 50%; /* center vertically */
-    
-    padding: 10px; /* optional padding */
-    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    background-color: rgba(0, 0, 0, 0.527);
+    padding: 7px;
+    border-radius: 20px;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+#tap-instruction-left {
+    left: 1%;
+}
+
+#tap-instruction-right {
+    right: 1%;
 }
 
 .property-info {
@@ -344,18 +349,6 @@ body {
         width: 100%;
     }
 
-    #left-arrow {
-        grid-row: 2;
-        justify-self: start;
-        margin-left: 10px;
-    }
-
-    #right-arrow {
-        grid-row: 2;
-        justify-self: end;
-        margin-right: 10px;
-    }
-
     #price-guess {
         max-width: 340px;
         font-size: 30px;
@@ -397,12 +390,6 @@ body {
 @media (max-width: 376px) {
     #property-title {
         font-size: 50px;
-    }
-}
-
-@media (pointer:none), (pointer:coarse) {
-    .arrow-button:hover {
-        transform: scale(1);
     }
 }
 
