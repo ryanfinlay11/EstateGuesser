@@ -332,6 +332,13 @@ document.addEventListener('keyup', function() {
     isKeyPressed = false;
 });
 
+document.querySelector('input').addEventListener('keydown', function(event) {
+    var arrowKeys = [37, 38, 39, 40];  // Key codes for left, up, right, and down arrow keys
+    if (arrowKeys.includes(event.keyCode)) {
+        event.preventDefault();
+    }
+});
+
 propertyImage.addEventListener('click', function(event) {
     if (event.offsetX < this.offsetWidth / 2) changeImage('left');
     else changeImage('right');
