@@ -333,7 +333,7 @@ document.addEventListener('keyup', function() {
 });
 
 document.querySelector('input').addEventListener('keydown', function(event) {
-    var arrowKeys = [37, 38, 39, 40];  // Key codes for left, up, right, and down arrow keys
+    var arrowKeys = [37, 39];  // Key codes for left and right arrow keys
     if (arrowKeys.includes(event.keyCode)) {
         event.preventDefault();
     }
