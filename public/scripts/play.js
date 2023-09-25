@@ -302,7 +302,6 @@ function shuffleArray(array) {
 }
 
 async function logData(type) {
-    console.log("Logging data " + type);
     const ip = await fetch('https://api.ipify.org?format=json').then(result => result.json()).then(data => data.ip);
     const agent = navigator.userAgent;
     let data = {
