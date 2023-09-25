@@ -2,6 +2,7 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const express = require('express');
 const path = require('path');
+const axios = require('axios');
 
 //If db is in emulation mode, initialize emulation db
 if (process.env.FUNCTIONS_EMULATOR) {
@@ -44,8 +45,31 @@ app.get('/api/:location', async (req, res) => {
         }
         res.send(properties);
     } catch (err) {
-        console.log(err);
-        console.log("Error getting 5 properties");
+        console.log('Error getting 5 properties: ' + err);
+        res.status(500).send(err);
+    }
+});
+
+//Log info to discord
+app.post('/api/log/', async (req, res) => {
+    try {
+        const webhook = functions.config().discord.webhook;
+        let message;
+        if (req.body.type === 'start') message = `Game started by IP: ${req.body.ip} Agent: ${req.body.agent} in ${req.body.location} `;
+        else message = `Game finished by IP: ${req.body.ip} Agent: ${req.body.agent} in ${req.body.location} with score: ${req.body.score}\n-`;
+        try {
+            await axios.post(webhook, {
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                content: message
+            });
+        } catch (err) {
+            console.error('Error logging to discord: ' + err);
+        }
+        res.status(200).send('Logged');
+    } catch (err) {
+        console.error('Error logging to discord: ' + err);
         res.status(500).send(err);
     }
 });

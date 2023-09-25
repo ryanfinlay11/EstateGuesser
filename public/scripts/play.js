@@ -55,6 +55,7 @@ function start() {
     hide(introModal);
     propertyIDs = shuffleArray(Object.keys(properties));
     startRound();
+    logData('start');
 }
 
 function changeImage(direction) {
@@ -100,6 +101,7 @@ function next() {
         hide(timesUpModal);
         show(endGameModal);
         setText(totalPoints, totalPointsNum, getColorForScore(totalPointsNum, 'total'));
+        logData('end');
     } else {
         startRound();
     }
@@ -297,6 +299,31 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+}
+
+async function logData(type) {
+    console.log("Logging data " + type);
+    const ip = await fetch('https://api.ipify.org?format=json').then(result => result.json()).then(data => data.ip);
+    const agent = navigator.userAgent;
+    let data = {
+        type: type,
+        ip: ip,
+        agent: agent,
+        location: chosenLocation,
+        score: 0
+    };
+    if (type === 'end') data.score = totalPointsNum;
+    try {
+        await fetch('/api/log/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+    } catch (err) {
+        console.log("Data could not be logged");
+    }
 }
 
 function error(message) {
