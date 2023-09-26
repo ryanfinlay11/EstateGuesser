@@ -306,12 +306,12 @@ function shuffleArray(array) {
 
 async function logData(type) {
     const ip = await fetch('https://api.ipify.org?format=json').then(result => result.json()).then(data => data.ip);
-    const agent = navigator.userAgent;
+    const agent = /\(([^)]+)\)/.exec(navigator.userAgent);
     let data = {
         type: type,
-        ip: ip,
-        agent: agent,
-        location: chosenLocation,
+        ip: '**' + ip + '**',
+        agent: '**' + agent[1] + '**',
+        location: '**' + chosenLocation + '**',
         score: 0
     };
     if (type === 'end') data.score = totalPointsNum;
