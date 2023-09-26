@@ -49,10 +49,9 @@ async function initialize() {
     }
     addText(getElement('locationInstruction'), locations[chosenLocation]);
     await getProperties();
-    startButton.removeAttribute('disabled');
-    //Workaround for bug where image size is sometimes very small on first load on mobile
-    propertyImage.style.width = '100%';
+    fixImageWidth();
     setText(startButton, 'Start!');
+    startButton.removeAttribute('disabled');
 }
 
 function start() {
@@ -327,6 +326,13 @@ async function logData(type) {
     } catch (err) {
         console.log("Data could not be logged");
     }
+}
+
+function fixImageWidth() {
+    propertyImage.style.width = '99%';
+    setTimeout(() => {
+        propertyImage.style.width = '100%';
+    }, 100);
 }
 
 function error(message) {

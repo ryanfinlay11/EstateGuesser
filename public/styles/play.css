@@ -241,7 +241,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.815); 
-    z-index: 1000; /* Ensure it appears on top */
+    z-index: 1000;
 }
 
 .modal-content {
@@ -334,18 +334,8 @@ img {
         width: 100%;
         padding: 0;
     }
-    
-    .image-controller {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        align-items: center;
-        gap: 20px;
-    }
 
     .property-image {
-        grid-column: 1 / -1;
-        grid-row: 1;
         width: 100%;
     }
 
