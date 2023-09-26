@@ -36,7 +36,9 @@ let timerGoing = false;
 let isKeyPressed = false;
 let tapInstructionsFaded = false;
 
-initialize();
+window.onload = function() {
+    initialize();
+};
 
 async function initialize() {
     const startButton = getElement('start-button');
@@ -48,6 +50,8 @@ async function initialize() {
     addText(getElement('locationInstruction'), locations[chosenLocation]);
     await getProperties();
     startButton.removeAttribute('disabled');
+    //Workaround for bug where image size is sometimes very small on first load on mobile
+    propertyImage.style.width = '100%';
     setText(startButton, 'Start!');
 }
 
