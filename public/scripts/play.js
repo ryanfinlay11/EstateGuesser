@@ -312,9 +312,9 @@ async function logData(type) {
         ip: '**' + ip + '**',
         agent: '**' + agent[1] + '**',
         location: '**' + chosenLocation + '**',
-        score: 0
+        score: '0'
     };
-    if (type === 'end') data.score = totalPointsNum;
+    if (type === 'end') data.score = '**' + totalPointsNum + '**';
     try {
         await fetch('/api/log/', {
             method: 'POST',
