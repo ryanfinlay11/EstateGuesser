@@ -214,17 +214,15 @@ img {
     margin-top: 5vh;
 }
 
-/*
 .linkedin {
   max-height: 30px;
   max-width: 30px;
 }
-*/
 
 .github {
     max-height: 30px;
     max-width: 30px;
-    /*margin-left: 15px;*/
+    margin-left: 15px;
     filter: brightness(0);
   }
 
@@ -291,6 +289,36 @@ img {
 }
 
 /*Post round modal*/
+#new-high-score, #perfect-score {
+    background: none;
+    color: yellow;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+@supports (-webkit-background-clip: text) {
+    #new-high-score, #perfect-score {
+        animation: gradientScroll 5s infinite linear;
+        color: transparent;
+    }
+    #new-high-score {
+        background: linear-gradient(45deg, red, yellow);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+    }
+    #perfect-score {
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+    }
+}
+
+#high-score {
+    color: yellow;
+}
+
 .points-gained, .total-gained {
     font-family: Roboto;
     font-size: 75px;
@@ -361,9 +389,18 @@ img {
     }
 }
 
-@media (max-height: 800px) {
-    .points-gained {
+@media (max-height: 850px) {
+    .points-gained, .total-gained {
         font-size: 65px;
+    }
+    #start-button, #next-button, #play-again-button, #play-new-button, #see-results-button {
+        font-size: 35px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .high-score {
+        margin-top: 1vh;
+        margin-bottom: 0;
     }
     h2, h3 {
         margin-top: 10px;
@@ -390,4 +427,16 @@ img {
 
 .strobe-effect {
     animation: strobe 0.33s infinite;
+}
+
+@keyframes gradientScroll {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }

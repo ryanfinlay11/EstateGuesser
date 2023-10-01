@@ -1,5 +1,5 @@
 const chosenLocation = window.location.pathname.split('/').pop();
-const locations = {'toronto': 'Toronto', 'vaughan': 'Vaughan'};
+const locations = {'toronto': 'Toronto', 'vaughan': 'Vaughan', 'richmondhill': "Richmond Hill"};
 
 const introModal = getElement('introModal');
 
@@ -103,7 +103,7 @@ function next() {
     if (currentRound > 5 || timeLeft <= 0) {
         hide(timesUpModal);
         show(endGameModal);
-        setText(totalPoints, totalPointsNum, getColorForScore(totalPointsNum, 'total'));
+        setEndGame();
         logData('end');
     } else {
         startRound();
@@ -212,6 +212,24 @@ function addText(element, text){
 
 function setImage(url) {
     propertyImage.src = "https://cdn.realtor.ca/listing/" + url;
+}
+
+function setEndGame() {
+    let highScore = JSON.parse(localStorage.getItem(`${chosenLocation}highScore`));
+    if (!highScore) highScore = 0;
+
+    if (totalPointsNum === 5000) {
+        highScore = 5000;
+        getElement('perfect-score').style.display = 'block';
+    } 
+    else if (totalPointsNum > highScore) {
+        highScore = totalPointsNum;
+        getElement('new-high-score').style.display = 'block';
+    }
+    
+    localStorage.setItem(`${chosenLocation}highScore`, JSON.stringify(highScore));
+    setText(getElement('high-score'), highScore, getColorForScore(highScore, 'total'));
+    setText(totalPoints, totalPointsNum, getColorForScore(totalPointsNum, 'total'));
 }
 
 function updateOccuranceArray(occuranceArray, propertyNums) {

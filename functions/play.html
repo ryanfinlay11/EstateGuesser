@@ -51,6 +51,9 @@
       
       <div class="footer">
         <div class="logos">
+          <a href="https://www.linkedin.com/in/ryanfinlay11/" target="_blank">
+            <img class="linkedin" src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin logo">
+          </a>
           <a href="https://github.com/ryanfinlay11/EstateGuesser" target="_blank">
             <img class="github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png" alt="github logo">
           </a>
@@ -59,7 +62,7 @@
       </div>
     </div>
 
-    <div id="introModal" class="modal">
+    <div id="introModal" class="modal" style="display: block;">
       <div class="modal-content">
           <h1>How to Play</h1>
           <p id="locationInstruction">You will be shown 5 different properties across </p>
@@ -89,7 +92,10 @@
 
     <div id="endGameModal" class="modal" style="display: none;">
       <div class="modal-content">
+          <h1 id="new-high-score" style="display: none;">New High Score!</h1>
+          <h1 id="perfect-score" style="display: none;">Perfect Score</h1>
           <h1 class="total-gained"><span id="total-points-num">1000</span> points</h1>
+          <h1 class="high-score">High Score: <span id="high-score">1000</span></h1>
           <button id="play-again-button" onclick="location.reload()">Play<br>Again</button>
           <br>
           <a href="/select">

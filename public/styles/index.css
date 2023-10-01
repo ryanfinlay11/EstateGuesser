@@ -33,16 +33,16 @@
   align-items: center;
 }
 
-.github {
-  max-height: 30px;
-  max-width: 30px;
-  /*margin-left: 15px;*/
-  filter: brightness(0);
-}
-
 .linkedin {
   max-height: 30px;
   max-width: 30px;
+}
+
+.github {
+  max-height: 30px;
+  max-width: 30px;
+  margin-left: 15px;
+  filter: brightness(0);
 }
 
 .credit-name {

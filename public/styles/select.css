@@ -71,13 +71,21 @@
   filter: brightness(1);
 }
 
+#richmondhill:hover {
+  transform: scale(1.05);
+}
+
+#richmondhill:hover::before {
+  filter: brightness(1);
+}
+
 .city-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1; /* ensures text is always on top */
-  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  text-shadow: 8px 8px 16px rgb(0, 0, 0);
   font-family: Roboto;
   color: white;
   font-weight: bold;
@@ -114,17 +122,15 @@
   align-items: center;
 }
 
-/*
 .linkedin {
   max-height: 30px;
   max-width: 30px;
 }
-*/
 
 .github {
   max-height: 30px;
   max-width: 30px;
-  /*margin-left: 15px;*/
+  margin-left: 15px;
   filter: brightness(0);
 }
 
@@ -160,6 +166,14 @@ body {
   }
 
   #vaughan::before {
+    filter: brightness(1);
+  }
+
+  #richmondhill:hover {
+    transform: scale(1);
+  }
+
+  #richmondhill::before {
     filter: brightness(1);
   }
 }
