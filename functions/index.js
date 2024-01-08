@@ -29,6 +29,7 @@ app.get('/api/:location', async (req, res) => {
         const location = req.params.location;
         const locations = ['toronto', 'vaughan', 'richmondhill'];
         if (!locations.includes(location)) return res.status(404).send('Location not found');
+
         const db = admin.database();
         const numOfProperties = (await db.ref(`/${location}/numOfProperties`).once('value')).val();
         let randomNums = [];
@@ -36,7 +37,7 @@ app.get('/api/:location', async (req, res) => {
         for (let i = 0; i < 5; i++) {
             while (true) {
                 let randomNum = Math.floor(Math.random() * numOfProperties) + 1;
-                if (!randomNums.includes(randomNum)) {
+                if (!randomNums.includes(randomNum) && await checkIfValidProperty(randomNum)) {
                     randomNums.push(randomNum);
                     break;
                 }
@@ -44,13 +45,32 @@ app.get('/api/:location', async (req, res) => {
             properties[`${randomNums[i]}`] = (await db.ref(`/${location}/properties/property${randomNums[i]}`).once('value')).val();
         }
         res.send(properties);
+
+        async function checkIfValidProperty(propertyNum) {
+            /* Some time after properties get deleted from realtor.ca, their images get deleted
+            *  This function checks if the property still has images */
+        
+            const firstPropertyImageSuffix = (await db.ref(`/${location}/properties/property${propertyNum}/imageUrls`).once('value')).val()[0];
+            const firstPropertyImageUrl = "https://cdn.realtor.ca/listing/" + firstPropertyImageSuffix;
+        
+            try {
+                const response = await axios.get(firstPropertyImageUrl);
+
+                if (response.headers['content-type'].startsWith('image/')) return true;
+                else return false;
+            } 
+            catch (err) {
+                return false;
+            }
+        }
+        
     } catch (err) {
         console.log('Error getting 5 properties: ' + err);
         res.status(500).send(err);
     }
 });
 
-//Log info to discord
+// Log info to discord
 app.post('/api/log/', async (req, res) => {
     try {
         const webhook = functions.config().discord.webhook;
