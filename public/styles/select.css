@@ -79,6 +79,14 @@
   filter: brightness(1);
 }
 
+#oakville:hover {
+  transform: scale(1.05);
+}
+
+#oakville:hover::before {
+  filter: brightness(1);
+}
+
 .city-text {
   position: absolute;
   top: 50%;
@@ -91,6 +99,21 @@
   font-weight: bold;
   font-size: 45px;
   text-align: center;
+}
+
+.notification {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-shadow: 8px 8px 16px rgb(0, 0, 0);
+  font-family: Roboto;
+  color: rgb(255, 0, 191);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 #toronto::before {
@@ -193,5 +216,27 @@ body {
   .city-block {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@supports (-webkit-background-clip: text) {
+  .notification {
+      animation: gradientScroll 3s infinite linear;
+      color: transparent;
+      background: linear-gradient(45deg, red, yellow);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+  }
+}
+
+@keyframes gradientScroll {
+  0% {
+      background-position: 100% 0%;
+  }
+  50% {
+      background-position: 0% 100%;
+  }
+  100% {
+      background-position: 100% 0%;
   }
 }

@@ -1,5 +1,6 @@
 const chosenLocation = window.location.pathname.split('/').pop();
-const locations = {'toronto': 'Toronto', 'vaughan': 'Vaughan', 'richmondhill': "Richmond Hill"};
+const locations = {'toronto': 'Toronto', 'vaughan': 'Vaughan', 'richmondhill': 'Richmond Hill', 'oakville' : 'Oakville'};
+const currentPropertyVersion = '2';
 
 const introModal = getElement('introModal');
 
@@ -126,6 +127,11 @@ function startRound() {
 }
 
 async function getProperties() {
+    //If the occurance array is outdated, reset it
+    if (localStorage.getItem('propertyVersion') !== currentPropertyVersion) {
+        resetOccuranceArray();
+        localStorage.setItem('propertyVersion', currentPropertyVersion);
+    }
     //If this map has never been played before, initialize occurance array
     let occuranceArray = JSON.parse(localStorage.getItem(chosenLocation));
     if (!occuranceArray) {
@@ -235,6 +241,13 @@ function setEndGame() {
 function updateOccuranceArray(occuranceArray, propertyNums) {
     for (let i = 0; i < 5; i++) occuranceArray[propertyNums[i]]++;
     localStorage.setItem(chosenLocation, JSON.stringify(occuranceArray));
+}
+
+function resetOccuranceArray() {
+    const keys = Object.keys(locations);
+    keys.forEach(function(location) {
+        localStorage.removeItem(location);
+    });
 }
 
 function getElement(id) {

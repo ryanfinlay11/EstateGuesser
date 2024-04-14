@@ -27,7 +27,7 @@ app.get('/play/:location', (req, res) => {
 app.get('/api/:location', async (req, res) => {
     try {
         const location = req.params.location;
-        const locations = ['toronto', 'vaughan', 'richmondhill'];
+        const locations = ['toronto', 'vaughan', 'richmondhill', 'oakville'];
         if (!locations.includes(location)) return res.status(404).send('Location not found');
 
         const db = admin.database();
