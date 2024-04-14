@@ -199,6 +199,14 @@ body {
   #richmondhill::before {
     filter: brightness(1);
   }
+
+  #oakville:hover {
+    transform: scale(1);
+  }
+
+  #oakville::before {
+    filter: brightness(1);
+  }
 }
 
 /*All portrait touch devices*/
