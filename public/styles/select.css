@@ -56,7 +56,7 @@
 
 /*Change to .city-block:hover and .city-block:hover::before when more locations are added*/
 #toronto:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 #toronto:hover::before {
@@ -64,7 +64,7 @@
 }
 
 #vaughan:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 #vaughan:hover::before {
@@ -72,7 +72,7 @@
 }
 
 #richmondhill:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 #richmondhill:hover::before {
@@ -80,7 +80,7 @@
 }
 
 #oakville:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 #oakville:hover::before {
