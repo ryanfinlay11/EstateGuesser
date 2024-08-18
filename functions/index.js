@@ -34,12 +34,29 @@ app.get('/api/:location', async (req, res) => {
         const numOfProperties = (await db.ref(`/${location}/numOfProperties`).once('value')).val();
         let randomNums = [];
         let properties = {};
+        /* Here, 5 properties are randomly selected from the database. If the property is not valid (images are deleted from realtor.ca),
+        *  then the property is not added to the list of properties.
+        *  If realtor.ca deletes a large number of properties, or if they change the image url format, then the function would loop forever.
+        *  This maxLoopCount variable limits the number of iterations */
+        const loopCountWarning = 10;
+        const maxLoopCount = 20;
         for (let i = 0; i < 5; i++) {
+            let loopCount = 0;
             while (true) {
                 let randomNum = Math.floor(Math.random() * numOfProperties) + 1;
                 if (!randomNums.includes(randomNum) && await checkIfValidProperty(randomNum)) {
                     randomNums.push(randomNum);
                     break;
+                }
+                loopCount++;
+                if (loopCount > loopCountWarning && loopCount < maxLoopCount) {
+                    logToDiscord(`Get properties looped > ${loopCountWarning} times on the ${i}'th iteration`);
+                }
+                else if (loopCount >= maxLoopCount) {
+                    console.log(`Error getting 5 properties (get properties looped > ${maxLoopCount} times):`);
+                    logToDiscord(`GET PROPERTIES LOOPED > ${maxLoopCount} TIMES ON THE ${i}'TH ITERATION!!!`);
+                    res.status(500).send("Error getting properties");
+                    throw new Error('Error getting properties');
                 }
             }
             properties[`${randomNums[i]}`] = (await db.ref(`/${location}/properties/property${randomNums[i]}`).once('value')).val();
@@ -61,6 +78,20 @@ app.get('/api/:location', async (req, res) => {
             } 
             catch (err) {
                 return false;
+            }
+        } 
+
+        async function logToDiscord(message) {
+            const webhook = functions.config().discord.webhook;
+            try {
+                await axios.post(webhook, {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    content: message
+                });
+            } catch (err) {
+                console.error('Error logging to discord: ' + err);
             }
         }
         
