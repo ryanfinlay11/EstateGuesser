@@ -1,6 +1,6 @@
 const chosenLocation = window.location.pathname.split('/').pop();
 const locations = {'toronto': 'Toronto', 'vaughan': 'Vaughan', 'richmondhill': 'Richmond Hill', 'oakville' : 'Oakville'};
-const currentPropertyVersion = '2';
+const currentPropertyVersion = '3';
 
 const introModal = getElement('introModal');
 
