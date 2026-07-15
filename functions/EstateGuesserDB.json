@@ -1,0 +1,2822 @@
+{
+  "toronto": {
+    "numOfProperties": 100,
+    "properties": {
+      "property1": {
+        "address": "76 BINSCARTH ROAD",
+        "listingPrice": "$17,000,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property2": {
+        "address": "30 WHITNEY AVENUE",
+        "listingPrice": "$16,995,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "9",
+        "imageCount": 30
+      },
+      "property3": {
+        "address": "382 OLD YONGE STREET",
+        "listingPrice": "$16,800,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "12",
+        "imageCount": 44
+      },
+      "property4": {
+        "address": "221 DUNVEGAN ROAD",
+        "listingPrice": "$13,999,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "8",
+        "imageCount": 24
+      },
+      "property5": {
+        "address": "7 APPLEBY COURT",
+        "listingPrice": "$13,950,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "9",
+        "imageCount": 42
+      },
+      "property6": {
+        "address": "23 RIVERSIDE CRESCENT",
+        "listingPrice": "$13,800,000",
+        "bedrooms": "5",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property7": {
+        "address": "7 OXBOW ROAD",
+        "listingPrice": "$13,800,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "8",
+        "imageCount": 37
+      },
+      "property8": {
+        "address": "39 BURTON ROAD",
+        "listingPrice": "$10,180,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 26
+      },
+      "property9": {
+        "address": "421 THE KINGSWAY",
+        "listingPrice": "$9,880,000",
+        "bedrooms": "4",
+        "bathrooms": "6",
+        "imageCount": 40
+      },
+      "property10": {
+        "address": "59 HI MOUNT DRIVE",
+        "listingPrice": "$8,500,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property11": {
+        "address": "307 RICHVIEW AVENUE",
+        "listingPrice": "$6,699,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 49
+      },
+      "property12": {
+        "address": "10 PENWOOD CRESCENT",
+        "listingPrice": "$5,499,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property13": {
+        "address": "361 SPRING GARDEN AVENUE",
+        "listingPrice": "$5,288,000",
+        "bedrooms": "5 + 4",
+        "bathrooms": "8",
+        "imageCount": 40
+      },
+      "property14": {
+        "address": "1305 ROYAL YORK ROAD",
+        "listingPrice": "$5,198,000",
+        "bedrooms": "4",
+        "bathrooms": "7",
+        "imageCount": 46
+      },
+      "property15": {
+        "address": "7 LEGACY COURT",
+        "listingPrice": "$4,990,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 47
+      },
+      "property16": {
+        "address": "554 ST CLEMENTS AVENUE",
+        "listingPrice": "$4,798,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "6",
+        "imageCount": 43
+      },
+      "property17": {
+        "address": "205 NORTHWOOD DRIVE",
+        "listingPrice": "$4,495,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "8",
+        "imageCount": 49
+      },
+      "property18": {
+        "address": "11 BURROWS AVENUE",
+        "listingPrice": "$4,250,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 40
+      },
+      "property19": {
+        "address": "141 CHURCHILL AVENUE",
+        "listingPrice": "$3,688,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "7",
+        "imageCount": 44
+      },
+      "property20": {
+        "address": "21 ALLENWOOD CRESCENT",
+        "listingPrice": "$3,380,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property21": {
+        "address": "14 PENZANCE DRIVE",
+        "listingPrice": "$3,099,990",
+        "bedrooms": "7",
+        "bathrooms": "5",
+        "imageCount": 47
+      },
+      "property22": {
+        "address": "330 HILLCREST AVENUE",
+        "listingPrice": "$2,999,800",
+        "bedrooms": "5 + 2",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property23": {
+        "address": "10 BAYBERRY CRESCENT",
+        "listingPrice": "$2,999,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property24": {
+        "address": "9 BERNICE AVENUE",
+        "listingPrice": "$2,998,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property25": {
+        "address": "34 DRESDEN ROAD",
+        "listingPrice": "$2,799,900",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property26": {
+        "address": "116 CHURCH AVENUE",
+        "listingPrice": "$2,798,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 40
+      },
+      "property27": {
+        "address": "58 JOHNSTON AVENUE",
+        "listingPrice": "$2,789,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 63
+      },
+      "property28": {
+        "address": "11 CRANLEIGH COURT",
+        "listingPrice": "$2,750,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property29": {
+        "address": "16 LAWNVIEW DRIVE",
+        "listingPrice": "$2,400,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "7",
+        "imageCount": 51
+      },
+      "property30": {
+        "address": "706 GLENCAIRN AVENUE",
+        "listingPrice": "$2,399,999",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 42
+      },
+      "property31": {
+        "address": "14 RANWOOD DRIVE",
+        "listingPrice": "$2,399,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property32": {
+        "address": "14 CADMUS ROAD",
+        "listingPrice": "$2,388,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "5",
+        "imageCount": 46
+      },
+      "property33": {
+        "address": "108 POPLAR HEIGHTS DRIVE",
+        "listingPrice": "$2,350,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 24
+      },
+      "property34": {
+        "address": "2703 LAKE SHORE BOULEVARD W",
+        "listingPrice": "$2,350,000",
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "imageCount": 48
+      },
+      "property35": {
+        "address": "50 DEWEY DRIVE",
+        "listingPrice": "$2,300,000",
+        "bedrooms": "4",
+        "bathrooms": "6",
+        "imageCount": 42
+      },
+      "property36": {
+        "address": "154 CHARLTON BOULEVARD",
+        "listingPrice": "$2,299,999",
+        "bedrooms": "5 + 2",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property37": {
+        "address": "24 MURRAY AVENUE",
+        "listingPrice": "$2,295,000",
+        "bedrooms": "4 + 3",
+        "bathrooms": "6",
+        "imageCount": 46
+      },
+      "property38": {
+        "address": "133 SPRING GARDEN AVENUE",
+        "listingPrice": "$2,288,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 38
+      },
+      "property39": {
+        "address": "11 TREMONT ROAD",
+        "listingPrice": "$2,264,900",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 40
+      },
+      "property40": {
+        "address": "10 HAIDA COURT",
+        "listingPrice": "$2,249,800",
+        "bedrooms": "5 + 2",
+        "bathrooms": "5",
+        "imageCount": 98
+      },
+      "property41": {
+        "address": "67 SCARBOROUGH HEIGHTS BOULEVARD",
+        "listingPrice": "$2,199,900",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 40
+      },
+      "property42": {
+        "address": "6 JEAN STREET",
+        "listingPrice": "$2,199,000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "imageCount": 39
+      },
+      "property43": {
+        "address": "23 RAVENSBOURNE CRESCENT",
+        "listingPrice": "$2,198,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "3",
+        "imageCount": 44
+      },
+      "property44": {
+        "address": "1208 GLENCAIRN AVENUE",
+        "listingPrice": "$2,195,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 45
+      },
+      "property45": {
+        "address": "83 LARKFIELD DRIVE",
+        "listingPrice": "$2,099,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "2",
+        "imageCount": 41
+      },
+      "property46": {
+        "address": "30 BLUE RIDGE ROAD",
+        "listingPrice": "$2,088,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "3",
+        "imageCount": 42
+      },
+      "property47": {
+        "address": "1139 GLENGROVE AVENUE W",
+        "listingPrice": "$2,049,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 59
+      },
+      "property48": {
+        "address": "5 LARWOOD BOULEVARD",
+        "listingPrice": "$1,999,999",
+        "bedrooms": "5 + 2",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property49": {
+        "address": "107 PEMBERTON AVENUE",
+        "listingPrice": "$1,999,900",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 41
+      },
+      "property50": {
+        "address": "201 GODDARD STREET",
+        "listingPrice": "$1,999,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property51": {
+        "address": "593 CUMMER AVENUE",
+        "listingPrice": "$1,998,800",
+        "bedrooms": "3 + 1",
+        "bathrooms": "5",
+        "imageCount": 37
+      },
+      "property52": {
+        "address": "310 GLENCAIRN AVENUE",
+        "listingPrice": "$1,995,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 32
+      },
+      "property53": {
+        "address": "6 FARMINGDALE ROAD",
+        "listingPrice": "$1,990,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 26
+      },
+      "property54": {
+        "address": "327 MELROSE STREET",
+        "listingPrice": "$1,969,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "5",
+        "imageCount": 43
+      },
+      "property55": {
+        "address": "172 BURNHAMTHORPE ROAD",
+        "listingPrice": "$1,949,900",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property56": {
+        "address": "613 HARVIE AVENUE",
+        "listingPrice": "$1,929,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "6",
+        "imageCount": 35
+      },
+      "property57": {
+        "address": "402 GLEN PARK AVENUE",
+        "listingPrice": "$1,899,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property58": {
+        "address": "850 COSBURN AVENUE",
+        "listingPrice": "$1,899,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property59": {
+        "address": "12 RUDEN CRESCENT",
+        "listingPrice": "$1,898,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "3",
+        "imageCount": 43
+      },
+      "property60": {
+        "address": "9 TERRINGTON COURT",
+        "listingPrice": "$1,893,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "2",
+        "imageCount": 37
+      },
+      "property61": {
+        "address": "372B HOUNSLOW AVENUE",
+        "listingPrice": "$1,888,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property62": {
+        "address": "176 HOMEWOOD AVENUE",
+        "listingPrice": "$1,888,000",
+        "bedrooms": "4 + 4",
+        "bathrooms": "5",
+        "imageCount": 43
+      },
+      "property63": {
+        "address": "17 EXBURY ROAD",
+        "listingPrice": "$1,885,888",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 52
+      },
+      "property64": {
+        "address": "477 CUMMER AVENUE",
+        "listingPrice": "$1,880,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property65": {
+        "address": "46 WINLOCK PARK",
+        "listingPrice": "$1,858,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property66": {
+        "address": "53 SAUGEEN CRESCENT",
+        "listingPrice": "$1,850,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property67": {
+        "address": "41 ALGOMA STREET",
+        "listingPrice": "$1,849,999",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property68": {
+        "address": "271 ST CLAIR AVENUE E",
+        "listingPrice": "$1,849,000",
+        "bedrooms": "3",
+        "bathrooms": "1",
+        "imageCount": 12
+      },
+      "property69": {
+        "address": "1113B ISLINGTON AVENUE",
+        "listingPrice": "$1,848,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property70": {
+        "address": "4029 ELLESMERE ROAD",
+        "listingPrice": "$1,829,000",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 38
+      },
+      "property71": {
+        "address": "4009 BLOOR STREET W",
+        "listingPrice": "$1,828,990",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 52
+      },
+      "property72": {
+        "address": "56 LABURNHAM AVENUE",
+        "listingPrice": "$1,820,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property73": {
+        "address": "48 STONEBRIDGE BOULEVARD",
+        "listingPrice": "$1,800,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 37
+      },
+      "property74": {
+        "address": "133 TIMES ROAD",
+        "listingPrice": "$1,799,999",
+        "bedrooms": "3 + 2",
+        "bathrooms": "4",
+        "imageCount": 38
+      },
+      "property75": {
+        "address": "745 GLENGROVE AVENUE W",
+        "listingPrice": "$1,799,900",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property76": {
+        "address": "25 LEAFIELD DRIVE",
+        "listingPrice": "$1,799,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 42
+      },
+      "property77": {
+        "address": "124 BATHGATE DRIVE",
+        "listingPrice": "$1,799,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "4",
+        "imageCount": 42
+      },
+      "property78": {
+        "address": "29 DOVERWOOD COURT",
+        "listingPrice": "$1,799,000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "imageCount": 36
+      },
+      "property79": {
+        "address": "23 CHRISTINE CRESCENT",
+        "listingPrice": "$1,798,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 45
+      },
+      "property80": {
+        "address": "47 HERBERT AVENUE",
+        "listingPrice": "$1,790,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "2",
+        "imageCount": 46
+      },
+      "property81": {
+        "address": "102 NEVILLE PARK BOULEVARD",
+        "listingPrice": "$1,789,900",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "imageCount": 30
+      },
+      "property82": {
+        "address": "55 SUNVALE DRIVE",
+        "listingPrice": "$1,788,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "3",
+        "imageCount": 50
+      },
+      "property83": {
+        "address": "43 VIAMEDE CRESCENT",
+        "listingPrice": "$1,788,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 41
+      },
+      "property84": {
+        "address": "24 BELLBROOK ROAD",
+        "listingPrice": "$1,775,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property85": {
+        "address": "59 PRINCEMERE CRESCENT",
+        "listingPrice": "$1,769,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 29
+      },
+      "property86": {
+        "address": "17 CALVIN AVENUE",
+        "listingPrice": "$1,760,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "2",
+        "imageCount": 31
+      },
+      "property87": {
+        "address": "37 BENNETT ROAD",
+        "listingPrice": "$1,750,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 45
+      },
+      "property88": {
+        "address": "108 ALBERTUS AVENUE",
+        "listingPrice": "$1,750,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 26
+      },
+      "property89": {
+        "address": "59 COURCELETTE ROAD",
+        "listingPrice": "$1,749,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "1",
+        "imageCount": 44
+      },
+      "property90": {
+        "address": "33 MORBANK DRIVE",
+        "listingPrice": "$1,600,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 34
+      },
+      "property91": {
+        "address": "79 BENNETT ROAD",
+        "listingPrice": "$1,599,900",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 33
+      },
+      "property92": {
+        "address": "171 BETA STREET",
+        "listingPrice": "$1,599,888",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property93": {
+        "address": "224 AYLESWORTH AVENUE",
+        "listingPrice": "$799,999",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 50
+      },
+      "property94": {
+        "address": "3 HIGHVALE ROAD",
+        "listingPrice": "$1,599,000",
+        "bedrooms": "4 + 3",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property95": {
+        "address": "85 PORTICO DRIVE",
+        "listingPrice": "$1,599,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 45
+      },
+      "property96": {
+        "address": "19 PARKLEA DRIVE",
+        "listingPrice": "$1,599,000",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "imageCount": 32
+      },
+      "property97": {
+        "address": "50 ELINOR AVENUE",
+        "listingPrice": "$1,199,999",
+        "bedrooms": "3 + 2",
+        "bathrooms": "3",
+        "imageCount": 51
+      },
+      "property98": {
+        "address": "2894 WESTON ROAD",
+        "listingPrice": "$979,000",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "imageCount": 50
+      },
+      "property99": {
+        "address": "31 KILBRIDE ROAD",
+        "listingPrice": "$978,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "2",
+        "imageCount": 50
+      },
+      "property100": {
+        "address": "5 MARINA AVENUE",
+        "listingPrice": "$1,749,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 46
+      }
+    }
+  },
+  "vaughan": {
+    "numOfProperties": 100,
+    "properties": {
+      "property1": {
+        "address": "121 REBECCA COURT",
+        "listingPrice": "$9,998,888",
+        "bedrooms": "5",
+        "bathrooms": "7",
+        "imageCount": 38
+      },
+      "property2": {
+        "address": "55 THORNBANK ROAD",
+        "listingPrice": "$9,980,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "10",
+        "imageCount": 49
+      },
+      "property3": {
+        "address": "24 DEW DROP COURT",
+        "listingPrice": "$8,910,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "10",
+        "imageCount": 40
+      },
+      "property4": {
+        "address": "100 ROCMARY PLACE",
+        "listingPrice": "$8,888,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "9",
+        "imageCount": 48
+      },
+      "property5": {
+        "address": "10 PETER MORSE WAY",
+        "listingPrice": "$8,388,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property6": {
+        "address": "20 ORICO COURT",
+        "listingPrice": "$7,999,900",
+        "bedrooms": "5",
+        "bathrooms": "7",
+        "imageCount": 43
+      },
+      "property7": {
+        "address": "36 WAYMAR HEIGHTS BOULEVARD",
+        "listingPrice": "$7,188,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property8": {
+        "address": "72 GOLF AVENUE",
+        "listingPrice": "$5,850,000",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 33
+      },
+      "property9": {
+        "address": "71 GRANDVISTA CRESCENT",
+        "listingPrice": "$5,380,000",
+        "bedrooms": "7",
+        "bathrooms": "9",
+        "imageCount": 43
+      },
+      "property10": {
+        "address": "50 EVITA COURT",
+        "listingPrice": "$4,995,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property11": {
+        "address": "67 DAVIDSON DRIVE",
+        "listingPrice": "$4,588,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 43
+      },
+      "property12": {
+        "address": "59 ORICO COURT",
+        "listingPrice": "$4,395,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 45
+      },
+      "property13": {
+        "address": "4599 LANGSTAFF ROAD",
+        "listingPrice": "$4,188,000",
+        "bedrooms": "5",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property14": {
+        "address": "79 GRANDVISTA CRESCENT",
+        "listingPrice": "$3,949,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 46
+      },
+      "property15": {
+        "address": "166 WEAVER COURT",
+        "listingPrice": "$3,788,000",
+        "bedrooms": "4",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property16": {
+        "address": "29 SECRET GARDEN COURT",
+        "listingPrice": "$3,488,800",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property17": {
+        "address": "12 MARY NATASHA COURT",
+        "listingPrice": "$3,299,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property18": {
+        "address": "52 ROLLING GREEN COURT",
+        "listingPrice": "$3,249,999",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 47
+      },
+      "property19": {
+        "address": "91 NAPIER STREET",
+        "listingPrice": "$3,200,000",
+        "bedrooms": "2 + 2",
+        "bathrooms": "3",
+        "imageCount": 49
+      },
+      "property20": {
+        "address": "49 MARY NATASHA COURT",
+        "listingPrice": "$2,999,999",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 30
+      },
+      "property21": {
+        "address": "9 GLEN ABBEY TRAIL",
+        "listingPrice": "$2,949,888",
+        "bedrooms": "4 + 3",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property22": {
+        "address": "7 HOUSTON ROAD",
+        "listingPrice": "$2,899,900",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property23": {
+        "address": "220 KING HIGH DRIVE",
+        "listingPrice": "$2,788,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "5",
+        "imageCount": 42
+      },
+      "property24": {
+        "address": "39 ENDLESS CIRCLE",
+        "listingPrice": "$2,700,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "6",
+        "imageCount": 32
+      },
+      "property25": {
+        "address": "157 JEANNE DRIVE",
+        "listingPrice": "$2,698,800",
+        "bedrooms": "5 + 2",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property26": {
+        "address": "15 SCULPTURE GARDEN LANE",
+        "listingPrice": "$2,698,000",
+        "bedrooms": "5",
+        "bathrooms": "6",
+        "imageCount": 48
+      },
+      "property27": {
+        "address": "210 UPPER POST ROAD",
+        "listingPrice": "$2,650,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 42
+      },
+      "property28": {
+        "address": "101 APPLEYARD AVENUE",
+        "listingPrice": "$2,599,000",
+        "bedrooms": "5",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property29": {
+        "address": "30 ENCLAVE COURT",
+        "listingPrice": "$2,588,800",
+        "bedrooms": "5",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property30": {
+        "address": "28 BRIDGEND COURT S",
+        "listingPrice": "$2,499,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 46
+      },
+      "property31": {
+        "address": "13 PELLEGRINI DRIVE",
+        "listingPrice": "$2,499,000",
+        "bedrooms": "5",
+        "bathrooms": "6",
+        "imageCount": 44
+      },
+      "property32": {
+        "address": "74 KOOTENAY RIDGE",
+        "listingPrice": "$2,498,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 43
+      },
+      "property33": {
+        "address": "250 LAURENTIAN BOULEVARD",
+        "listingPrice": "$2,349,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property34": {
+        "address": "15 BROWNLEE AVENUE",
+        "listingPrice": "$2,288,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 28
+      },
+      "property35": {
+        "address": "51 BABAK BOULEVARD",
+        "listingPrice": "$2,099,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property36": {
+        "address": "210 CANNES AVENUE",
+        "listingPrice": "$1,999,999",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property37": {
+        "address": "116 KNIGHTSHADE DRIVE",
+        "listingPrice": "$1,999,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 38
+      },
+      "property38": {
+        "address": "101 SILVER STERLING CRESCENT",
+        "listingPrice": "$1,990,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property39": {
+        "address": "235 BELVIEW AVENUE",
+        "listingPrice": "$1,958,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property40": {
+        "address": "32 COLTON CRESCENT S",
+        "listingPrice": "$1,925,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 49
+      },
+      "property41": {
+        "address": "121 HIGHMARK DRIVE",
+        "listingPrice": "$1,899,900",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property42": {
+        "address": "231 PINEWOOD DRIVE",
+        "listingPrice": "$1,849,999",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 41
+      },
+      "property43": {
+        "address": "15 MAPLE FOREST DRIVE",
+        "listingPrice": "$1,838,000",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property44": {
+        "address": "12 SWEET VALERIE COURT",
+        "listingPrice": "$1,800,000",
+        "bedrooms": "5 + 3",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property45": {
+        "address": "226 VIA BORGHESE STREET",
+        "listingPrice": "$1,799,900",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 49
+      },
+      "property46": {
+        "address": "7930 KIPLING AVENUE",
+        "listingPrice": "$1,799,800",
+        "bedrooms": "6 + 2",
+        "bathrooms": "5",
+        "imageCount": 42
+      },
+      "property47": {
+        "address": "120 SANDWOOD DRIVE",
+        "listingPrice": "$1,798,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 46
+      },
+      "property48": {
+        "address": "55 HEADWIND BOULEVARD",
+        "listingPrice": "$1,788,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 34
+      },
+      "property49": {
+        "address": "44 WIGWOSS DRIVE",
+        "listingPrice": "$1,780,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 27
+      },
+      "property50": {
+        "address": "152 STORMONT TRAIL",
+        "listingPrice": "$1,779,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 51
+      },
+      "property51": {
+        "address": "71 IVY GLEN DRIVE",
+        "listingPrice": "$1,758,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 47
+      },
+      "property52": {
+        "address": "109 BARLI CRESCENT",
+        "listingPrice": "$1,749,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 39
+      },
+      "property53": {
+        "address": "27 ASNER AVENUE",
+        "listingPrice": "$1,736,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 42
+      },
+      "property54": {
+        "address": "22 LONGBRIDGE ROAD",
+        "listingPrice": "$1,729,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "3",
+        "imageCount": 41
+      },
+      "property55": {
+        "address": "382 VIA CAMPANILE",
+        "listingPrice": "$1,728,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property56": {
+        "address": "98 ARROWHEAD DRIVE",
+        "listingPrice": "$1,725,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property57": {
+        "address": "57 WHITBURN CRESCENT",
+        "listingPrice": "$1,720,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "5",
+        "imageCount": 48
+      },
+      "property58": {
+        "address": "208 MARIA ANTONIA ROAD",
+        "listingPrice": "$1,700,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 41
+      },
+      "property59": {
+        "address": "499 ABERDEEN AVENUE N",
+        "listingPrice": "$1,699,990",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 41
+      },
+      "property60": {
+        "address": "58 STILTON AVENUE",
+        "listingPrice": "$1,699,900",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 30
+      },
+      "property61": {
+        "address": "392 WOODGATE PINES DRIVE",
+        "listingPrice": "$1,699,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "4",
+        "imageCount": 51
+      },
+      "property62": {
+        "address": "30 HESPERUS ROAD",
+        "listingPrice": "$1,699,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 34
+      },
+      "property63": {
+        "address": "43 IVY GLEN DRIVE",
+        "listingPrice": "$1,698,000",
+        "bedrooms": "5",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property64": {
+        "address": "76 OAKDALE ROAD",
+        "listingPrice": "$1,690,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property65": {
+        "address": "9 SUMMERIDGE DRIVE",
+        "listingPrice": "$1,679,000",
+        "bedrooms": "4 + 3",
+        "bathrooms": "5",
+        "imageCount": 30
+      },
+      "property66": {
+        "address": "19 MANDOLIN COURT",
+        "listingPrice": "$1,679,800",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property67": {
+        "address": "74 WILLIS ROAD",
+        "listingPrice": "$1,649,800",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 49
+      },
+      "property68": {
+        "address": "10 ST CLARE BOULEVARD",
+        "listingPrice": "$1,639,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property69": {
+        "address": "29 BENTWOOD CRESCENT",
+        "listingPrice": "$1,618,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 28
+      },
+      "property70": {
+        "address": "85 BUTTERFIELD CRESCENT",
+        "listingPrice": "$1,599,900",
+        "bedrooms": "4 + 3",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property71": {
+        "address": "52 JANESVILLE ROAD",
+        "listingPrice": "$1,599,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 39
+      },
+      "property72": {
+        "address": "94 ROXANA AVENUE",
+        "listingPrice": "$1,589,900",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property73": {
+        "address": "14 DAPHNIA DRIVE",
+        "listingPrice": "$1,588,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 22
+      },
+      "property74": {
+        "address": "5 LONGHOUSE STREET",
+        "listingPrice": "$1,570,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 36
+      },
+      "property75": {
+        "address": "717 VAUGHAN MILLS ROAD",
+        "listingPrice": "$1,549,900",
+        "bedrooms": "4 + 2",
+        "bathrooms": "6",
+        "imageCount": 49
+      },
+      "property76": {
+        "address": "30 GRACEVIEW COURT",
+        "listingPrice": "$1,399,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 45
+      },
+      "property77": {
+        "address": "24 CACHET HILL CRESCENT",
+        "listingPrice": "$1,399,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 50
+      },
+      "property78": {
+        "address": "154 OLIVER LANE",
+        "listingPrice": "$1,370,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property79": {
+        "address": "46 VENICE CRESCENT",
+        "listingPrice": "$1,379,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property80": {
+        "address": "116 BUTTERFIELD CRESCENT",
+        "listingPrice": "$1,369,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 46
+      },
+      "property81": {
+        "address": "104 CRESSWELL AVENUE",
+        "listingPrice": "$1,358,000",
+        "bedrooms": "3 + 3",
+        "bathrooms": "3",
+        "imageCount": 39
+      },
+      "property82": {
+        "address": "32 VENETO DRIVE",
+        "listingPrice": "$1,349,990",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 24
+      },
+      "property83": {
+        "address": "4 SABLE ROAD",
+        "listingPrice": "$1,349,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 45
+      },
+      "property84": {
+        "address": "1 VIA CRISTINA WAY",
+        "listingPrice": "$1,348,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 50
+      },
+      "property85": {
+        "address": "17 VILLANDRY CRESCENT",
+        "listingPrice": "$1,338,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 33
+      },
+      "property86": {
+        "address": "86 HATTON GARDEN ROAD",
+        "listingPrice": "$1,325,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 49
+      },
+      "property87": {
+        "address": "108 SUNSET TERRACE",
+        "listingPrice": "$1,099,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 36
+      },
+      "property88": {
+        "address": "259 BARONS STREET",
+        "listingPrice": "$1,099,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 38
+      },
+      "property89": {
+        "address": "68 LAVENDER PLACE",
+        "listingPrice": "$1,099,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 33
+      },
+      "property90": {
+        "address": "53 MARC SANTI BOULEVARD",
+        "listingPrice": "$1,098,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 21
+      },
+      "property91": {
+        "address": "9184 BATHURST STREET",
+        "listingPrice": "$899,900",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 41
+      },
+      "property92": {
+        "address": "68 DENTON CIRCLE",
+        "listingPrice": "$899,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 37
+      },
+      "property93": {
+        "address": "8071 KIPLING AVENUE",
+        "listingPrice": "$899,000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "imageCount": 39
+      },
+      "property94": {
+        "address": "14 OPERA PLACE",
+        "listingPrice": "$899,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 28
+      },
+      "property95": {
+        "address": "103 GLENNGARRY CRESCENT",
+        "listingPrice": "$888,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property96": {
+        "address": "27 GIVON STREET",
+        "listingPrice": "$1,549,900",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 30
+      },
+      "property97": {
+        "address": "507 AUTUMN HILL BOULEVARD",
+        "listingPrice": "$1,549,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 40
+      },
+      "property98": {
+        "address": "72 BALDING BOULEVARD",
+        "listingPrice": "$7,888,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 40
+      },
+      "property99": {
+        "address": "140 RAVENDALE COURT",
+        "listingPrice": "$4,599,000",
+        "bedrooms": "5",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property100": {
+        "address": "68 DAVIDSON DRIVE",
+        "listingPrice": "$4,350,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "8",
+        "imageCount": 49
+      }
+    }
+  },
+  "richmondhill": {
+    "numOfProperties": 100,
+    "properties": {
+      "property1": {
+        "address": "33 FOREST RIDGE ROAD",
+        "listingPrice": "$18,000,000",
+        "bedrooms": "7 + 2",
+        "bathrooms": "13",
+        "imageCount": 45
+      },
+      "property2": {
+        "address": "20 BRYSON DRIVE",
+        "listingPrice": "$10,520,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property3": {
+        "address": "7 MARYVALE CRESCENT",
+        "listingPrice": "$8,800,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "9",
+        "imageCount": 24
+      },
+      "property4": {
+        "address": "40 MARYVALE CRESCENT",
+        "listingPrice": "$8,498,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "9",
+        "imageCount": 48
+      },
+      "property5": {
+        "address": "10 YONGEVIEW AVENUE",
+        "listingPrice": "$7,988,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "9",
+        "imageCount": 50
+      },
+      "property6": {
+        "address": "82 WESTWOOD LANE",
+        "listingPrice": "$7,888,888",
+        "bedrooms": "4 + 1",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property7": {
+        "address": "17 PEBBLELANE COURT",
+        "listingPrice": "$7,399,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property8": {
+        "address": "636 SUNSET BEACH ROAD",
+        "listingPrice": "$6,800,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "5",
+        "imageCount": 42
+      },
+      "property9": {
+        "address": "48 OLD PARK LANE",
+        "listingPrice": "$5,988,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "9",
+        "imageCount": 48
+      },
+      "property10": {
+        "address": "217 GARDEN AVENUE",
+        "listingPrice": "$5,888,000",
+        "bedrooms": "5 + 4",
+        "bathrooms": "9",
+        "imageCount": 50
+      },
+      "property11": {
+        "address": "124 WOOD LANE",
+        "listingPrice": "$5,398,888",
+        "bedrooms": "4 + 2",
+        "bathrooms": "6",
+        "imageCount": 40
+      },
+      "property12": {
+        "address": "56 WINCHESTER LANE",
+        "listingPrice": "$5,080,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property13": {
+        "address": "74 YONGEHURST ROAD",
+        "listingPrice": "$4,638,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property14": {
+        "address": "68 MAPLE GROVE AVENUE",
+        "listingPrice": "$4,180,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property15": {
+        "address": "33 MAPLE GROVE AVENUE",
+        "listingPrice": "$3,999,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property16": {
+        "address": "37 FRYBROOK CRESCENT",
+        "listingPrice": "$3,789,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "7",
+        "imageCount": 49
+      },
+      "property17": {
+        "address": "127 MAY AVENUE",
+        "listingPrice": "$3,639,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property18": {
+        "address": "46A PUCCINI DRIVE",
+        "listingPrice": "$3,499,000",
+        "bedrooms": "5",
+        "bathrooms": "7",
+        "imageCount": 45
+      },
+      "property19": {
+        "address": "46 BOAKE TRAIL",
+        "listingPrice": "$3,475,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property20": {
+        "address": "25 GUINEVERE COURT",
+        "listingPrice": "$3,198,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 47
+      },
+      "property21": {
+        "address": "115 ARTEN AVENUE",
+        "listingPrice": "$2,999,888",
+        "bedrooms": "3 + 3",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property22": {
+        "address": "112 STRATHEARN AVENUE",
+        "listingPrice": "$2,999,888",
+        "bedrooms": "6 + 2",
+        "bathrooms": "6",
+        "imageCount": 47
+      },
+      "property23": {
+        "address": "103 DUNCAN ROAD",
+        "listingPrice": "$2,998,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property24": {
+        "address": "58 SPRUCE AVENUE",
+        "listingPrice": "$2,990,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 45
+      },
+      "property25": {
+        "address": "294 SUNSET BEACH ROAD",
+        "listingPrice": "$2,949,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property26": {
+        "address": "118 PATHLANE ROAD",
+        "listingPrice": "$2,888,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 52
+      },
+      "property27": {
+        "address": "50 WELDRICK ROAD W",
+        "listingPrice": "$2,795,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 30
+      },
+      "property28": {
+        "address": "22 ARDWOLD GATE",
+        "listingPrice": "$2,729,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "5",
+        "imageCount": 40
+      },
+      "property29": {
+        "address": "33 OATLANDS CRESCENT",
+        "listingPrice": "$2,650,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "8",
+        "imageCount": 49
+      },
+      "property30": {
+        "address": "525 ELGIN MILLS ROAD W",
+        "listingPrice": "$2,299,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 40
+      },
+      "property31": {
+        "address": "11 HORIZON COURT",
+        "listingPrice": "$2,298,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property32": {
+        "address": "18 MARINUCCI COURT",
+        "listingPrice": "$2,288,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "5",
+        "imageCount": 48
+      },
+      "property33": {
+        "address": "123 FERN VALLEY CRESCENT",
+        "listingPrice": "$2,225,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "3",
+        "imageCount": 42
+      },
+      "property34": {
+        "address": "9 BACKHOUSE DRIVE",
+        "listingPrice": "$2,098,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 48
+      },
+      "property35": {
+        "address": "17 LADY LYNN CRESCENT",
+        "listingPrice": "$2,098,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property36": {
+        "address": "38A AVONLEA PLACE",
+        "listingPrice": "$2,088,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "5",
+        "imageCount": 40
+      },
+      "property37": {
+        "address": "15 FINESSE COURT",
+        "listingPrice": "$2,000,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "7",
+        "imageCount": 49
+      },
+      "property38": {
+        "address": "46 BOCCELLA CRESCENT",
+        "listingPrice": "$1,998,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 38
+      },
+      "property39": {
+        "address": "15 MOTLEY COURT",
+        "listingPrice": "$1,990,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 48
+      },
+      "property40": {
+        "address": "56 CYNTHIA CRESCENT",
+        "listingPrice": "$1,988,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 59
+      },
+      "property41": {
+        "address": "166 TOWER HILL ROAD",
+        "listingPrice": "$1,948,888",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 37
+      },
+      "property42": {
+        "address": "40 MEADOWSWEET LANE",
+        "listingPrice": "$1,899,999",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property43": {
+        "address": "129 LAKELAND CRESCENT",
+        "listingPrice": "$1,899,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "6",
+        "imageCount": 43
+      },
+      "property44": {
+        "address": "220 WELDRICK ROAD W",
+        "listingPrice": "$1,899,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 38
+      },
+      "property45": {
+        "address": "95 ALPACA DRIVE",
+        "listingPrice": "$1,898,800",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property46": {
+        "address": "162 HARTNEY DRIVE",
+        "listingPrice": "$1,888,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property47": {
+        "address": "41 BLOOMFIELD TRAIL",
+        "listingPrice": "$1,849,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 45
+      },
+      "property48": {
+        "address": "66 BUSH RIDGES AVENUE",
+        "listingPrice": "$1,838,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 48
+      },
+      "property49": {
+        "address": "38 MENOTTI DRIVE",
+        "listingPrice": "$1,800,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property50": {
+        "address": "147 FRANK ENDEAN ROAD",
+        "listingPrice": "$1,798,900",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 48
+      },
+      "property51": {
+        "address": "9 TARMACK DRIVE",
+        "listingPrice": "$1,798,800",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 37
+      },
+      "property52": {
+        "address": "156 TOWER HILL ROAD",
+        "listingPrice": "$1,798,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property53": {
+        "address": "14 LONGWORTH AVENUE",
+        "listingPrice": "$1,790,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 32
+      },
+      "property54": {
+        "address": "59 ESTATE GARDEN DRIVE",
+        "listingPrice": "$1,788,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property55": {
+        "address": "157 COON'S ROAD",
+        "listingPrice": "$1,749,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property56": {
+        "address": "23 BLOOMFIELD TRAIL",
+        "listingPrice": "$1,749,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 44
+      },
+      "property57": {
+        "address": "158 WORTHINGTON AVENUE",
+        "listingPrice": "$1,738,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "5",
+        "imageCount": 48
+      },
+      "property58": {
+        "address": "30 O'HARA CRESCENT",
+        "listingPrice": "$1,728,888",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property59": {
+        "address": "19 FOUNTAIN COURT",
+        "listingPrice": "$1,699,988",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 46
+      },
+      "property60": {
+        "address": "37 HERON HOLLOW AVENUE",
+        "listingPrice": "$1,699,900",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 45
+      },
+      "property61": {
+        "address": "26 KEW GARDENS",
+        "listingPrice": "$1,699,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 52
+      },
+      "property62": {
+        "address": "258 VALLEYMEDE DRIVE",
+        "listingPrice": "$1,699,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 32
+      },
+      "property63": {
+        "address": "23 AIDA PLACE",
+        "listingPrice": "$1,695,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 25
+      },
+      "property64": {
+        "address": "28 TIPP DRIVE",
+        "listingPrice": "$1,690,000",
+        "bedrooms": "5",
+        "bathrooms": "4",
+        "imageCount": 68
+      },
+      "property65": {
+        "address": "51 SANDERSON CRESCENT",
+        "listingPrice": "$1,688,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 32
+      },
+      "property66": {
+        "address": "87 MCCALLUM DRIVE",
+        "listingPrice": "$1,687,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property67": {
+        "address": "31 ROUTLEDGE DRIVE",
+        "listingPrice": "$1,685,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 38
+      },
+      "property68": {
+        "address": "108 HEADWATER CRESCENT",
+        "listingPrice": "$1,685,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 46
+      },
+      "property69": {
+        "address": "70 TOPHAM CRESCENT",
+        "listingPrice": "$1,680,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property70": {
+        "address": "81 SOUTHGATE CRESCENT",
+        "listingPrice": "$1,658,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "3",
+        "imageCount": 38
+      },
+      "property71": {
+        "address": "58 PICKETT CRESCENT",
+        "listingPrice": "$1,650,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 40
+      },
+      "property72": {
+        "address": "24 TIMBER VALLEY AVENUE",
+        "listingPrice": "$1,649,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 47
+      },
+      "property73": {
+        "address": "211 FRANK ENDEAN ROAD",
+        "listingPrice": "$1,628,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 33
+      },
+      "property74": {
+        "address": "241 SEGUIN STREET",
+        "listingPrice": "$1,625,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 34
+      },
+      "property75": {
+        "address": "69 MENOTTI DRIVE",
+        "listingPrice": "$1,599,900",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 46
+      },
+      "property76": {
+        "address": "5 ROCHESTER HILL STREET",
+        "listingPrice": "$1,599,900",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 39
+      },
+      "property77": {
+        "address": "27 WAGON WHEEL CRESCENT",
+        "listingPrice": "$1,599,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 42
+      },
+      "property78": {
+        "address": "78 ZIPPORA DRIVE",
+        "listingPrice": "$1,599,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 47
+      },
+      "property79": {
+        "address": "2 WOODRIVER STREET",
+        "listingPrice": "$1,598,888",
+        "bedrooms": "5 + 2",
+        "bathrooms": "6",
+        "imageCount": 44
+      },
+      "property80": {
+        "address": "39 JOCADA COURT",
+        "listingPrice": "$1,598,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property81": {
+        "address": "49 SOMERSET CRESCENT",
+        "listingPrice": "$1,399,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property82": {
+        "address": "278 BERNARD AVENUE",
+        "listingPrice": "$1,398,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property83": {
+        "address": "20 ELSTON COURT",
+        "listingPrice": "$1,389,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 27
+      },
+      "property84": {
+        "address": "28 BRIGHTWAY CRESCENT",
+        "listingPrice": "$1,388,600",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 49
+      },
+      "property85": {
+        "address": "134 HUMBERLAND DRIVE",
+        "listingPrice": "$1,385,800",
+        "bedrooms": "3 + 2",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property86": {
+        "address": "92 WELDRICK ROAD E",
+        "listingPrice": "$1,377,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 34
+      },
+      "property87": {
+        "address": "77 SUNSET BEACH ROAD",
+        "listingPrice": "$1,370,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 22
+      },
+      "property88": {
+        "address": "44 GLOBEMASTER LANE",
+        "listingPrice": "$1,365,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property89": {
+        "address": "9 PEGASUS DRIVE",
+        "listingPrice": "$1,180,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property90": {
+        "address": "321 SKOPIT ROAD",
+        "listingPrice": "$1,180,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "2",
+        "imageCount": 36
+      },
+      "property91": {
+        "address": "61 WOODHAVEN CRESCENT",
+        "listingPrice": "$1,179,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 29
+      },
+      "property92": {
+        "address": "47 DARIOLE DRIVE",
+        "listingPrice": "$1,175,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 44
+      },
+      "property93": {
+        "address": "75 PUISAYA DRIVE",
+        "listingPrice": "$1,175,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 34
+      },
+      "property94": {
+        "address": "15 BRUMSTEAD DRIVE N",
+        "listingPrice": "$1,158,800",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 22
+      },
+      "property95": {
+        "address": "7 LATCHFORD LANE",
+        "listingPrice": "$1,150,000",
+        "bedrooms": "3",
+        "bathrooms": "4",
+        "imageCount": 42
+      },
+      "property96": {
+        "address": "1 VANDERVOORT DRIVE",
+        "listingPrice": "$1,098,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property97": {
+        "address": "301 AXMINSTER DRIVE",
+        "listingPrice": "$878,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "2",
+        "imageCount": 35
+      },
+      "property98": {
+        "address": "333 NEAL DRIVE",
+        "listingPrice": "$849,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 29
+      },
+      "property99": {
+        "address": "167 TAYLOR MILLS DRIVE N",
+        "listingPrice": "$799,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "2",
+        "imageCount": 50
+      },
+      "property100": {
+        "address": "4 SUNSHINE DRIVE",
+        "listingPrice": "$739,995",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 32
+      }
+    }
+  },
+  "oakville": {
+    "numOfProperties": 100,
+    "properties": {
+      "property1": {
+        "address": "489 LAKESHORE ROAD E",
+        "listingPrice": "$23,980,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "8",
+        "imageCount": 48
+      },
+      "property2": {
+        "address": "6 ENNISCLARE DRIVE W",
+        "listingPrice": "$13,500,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 49
+      },
+      "property3": {
+        "address": "113 MAPLE GROVE DRIVE",
+        "listingPrice": "$12,000,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "10",
+        "imageCount": 50
+      },
+      "property4": {
+        "address": "262 MAPLE GROVE DRIVE",
+        "listingPrice": "$10,880,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property5": {
+        "address": "64 BRENTWOOD ROAD",
+        "listingPrice": "$7,950,000",
+        "bedrooms": "5",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property6": {
+        "address": "1081 ARGYLE DRIVE",
+        "listingPrice": "$7,749,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 49
+      },
+      "property7": {
+        "address": "84 PEBBLERIDGE PLACE",
+        "listingPrice": "$7,499,999",
+        "bedrooms": "4 + 3",
+        "bathrooms": "9",
+        "imageCount": 50
+      },
+      "property8": {
+        "address": "129 WOLFDALE AVENUE",
+        "listingPrice": "$7,470,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property9": {
+        "address": "3206 SHORELINE DRIVE",
+        "listingPrice": "$6,999,900",
+        "bedrooms": "5 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property10": {
+        "address": "21 SECOND STREET",
+        "listingPrice": "$6,975,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 47
+      },
+      "property11": {
+        "address": "112 ELTON PARK ROAD",
+        "listingPrice": "$6,499,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "8",
+        "imageCount": 49
+      },
+      "property12": {
+        "address": "231 WEDGEWOOD DRIVE",
+        "listingPrice": "$6,399,998",
+        "bedrooms": "4 + 2",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property13": {
+        "address": "1102 CRESTVIEW STREET",
+        "listingPrice": "$6,250,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 50
+      },
+      "property14": {
+        "address": "482 MORRISON ROAD",
+        "listingPrice": "$6,099,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "8",
+        "imageCount": 55
+      },
+      "property15": {
+        "address": "2096 LAKESHORE ROAD E",
+        "listingPrice": "$5,998,000",
+        "bedrooms": "6 + 1",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property16": {
+        "address": "138 DIANNE AVENUE",
+        "listingPrice": "$5,750,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 46
+      },
+      "property17": {
+        "address": "1477 DUNCAN ROAD",
+        "listingPrice": "$5,490,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property18": {
+        "address": "217 EASTCOURT ROAD",
+        "listingPrice": "$5,199,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "7",
+        "imageCount": 47
+      },
+      "property19": {
+        "address": "456 LAKESHORE ROAD W",
+        "listingPrice": "$5,125,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "7",
+        "imageCount": 47
+      },
+      "property20": {
+        "address": "1522 DEVON ROAD",
+        "listingPrice": "$4,990,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 49
+      },
+      "property21": {
+        "address": "45 SHOREWOOD PLACE",
+        "listingPrice": "$4,895,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property22": {
+        "address": "1516 DUNCAN ROAD",
+        "listingPrice": "$4,895,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property23": {
+        "address": "417 UNION STREET",
+        "listingPrice": "$4,750,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "8",
+        "imageCount": 50
+      },
+      "property24": {
+        "address": "36 ANDERSON STREET",
+        "listingPrice": "$3,998,900",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 49
+      },
+      "property25": {
+        "address": "74 WEST STREET",
+        "listingPrice": "$3,999,999",
+        "bedrooms": "3 + 2",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property26": {
+        "address": "1551 WARLAND ROAD",
+        "listingPrice": "$3,898,000",
+        "bedrooms": "2 + 2",
+        "bathrooms": "5",
+        "imageCount": 44
+      },
+      "property27": {
+        "address": "246 NYLA COURT",
+        "listingPrice": "$3,799,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property28": {
+        "address": "176 WEYBOURNE ROAD",
+        "listingPrice": "$3,749,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property29": {
+        "address": "1496 MANSFIELD DRIVE",
+        "listingPrice": "$2,899,000",
+        "bedrooms": "5 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property30": {
+        "address": "3176 STOCKSBRIDGE AVENUE",
+        "listingPrice": "$2,749,900",
+        "bedrooms": "5 + 2",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property31": {
+        "address": "175 BURLOAK DRIVE W",
+        "listingPrice": "$2,699,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property32": {
+        "address": "161 DORNIE ROAD",
+        "listingPrice": "$2,695,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "3",
+        "imageCount": 43
+      },
+      "property33": {
+        "address": "1099 BURNHAMTHORPE ROAD W",
+        "listingPrice": "$2,690,000",
+        "bedrooms": "2 + 2",
+        "bathrooms": "2",
+        "imageCount": 41
+      },
+      "property34": {
+        "address": "1328 KING HENRY COURT",
+        "listingPrice": "$2,650,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 47
+      },
+      "property35": {
+        "address": "427 CAIRNCROFT ROAD",
+        "listingPrice": "$2,650,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 49
+      },
+      "property36": {
+        "address": "1165 PINEGROVE ROAD",
+        "listingPrice": "$2,599,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 30
+      },
+      "property37": {
+        "address": "2293 CHARLES CORNWALL AVENUE",
+        "listingPrice": "$2,580,000",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 90
+      },
+      "property38": {
+        "address": "1079 JOHN LAIRD CIRCLE",
+        "listingPrice": "$2,549,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property39": {
+        "address": "3346 STOCKSBRIDGE AVENUE",
+        "listingPrice": "$2,499,900",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property40": {
+        "address": "2177 VINELAND CRESCENT",
+        "listingPrice": "$2,499,900",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 49
+      },
+      "property41": {
+        "address": "169 MORRISON ROAD",
+        "listingPrice": "$2,499,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "3",
+        "imageCount": 48
+      },
+      "property42": {
+        "address": "2363 YOLANDA DRIVE",
+        "listingPrice": "$2,498,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 47
+      },
+      "property43": {
+        "address": "3140 DANIEL WAY",
+        "listingPrice": "$2,495,000",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 40
+      },
+      "property44": {
+        "address": "2101 WESTOAK TRAILS BOULEVARD",
+        "listingPrice": "$2,478,000",
+        "bedrooms": "5 + 2",
+        "bathrooms": "5",
+        "imageCount": 67
+      },
+      "property45": {
+        "address": "1539 BAYSHIRE DRIVE",
+        "listingPrice": "$2,450,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property46": {
+        "address": "1794 GLENVISTA DRIVE",
+        "listingPrice": "$2,448,800",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property47": {
+        "address": "185 BURLOAK DRIVE",
+        "listingPrice": "$2,399,000",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 26
+      },
+      "property48": {
+        "address": "1193 BOWMAN DRIVE",
+        "listingPrice": "$2,399,000",
+        "bedrooms": "5",
+        "bathrooms": "5",
+        "imageCount": 52
+      },
+      "property49": {
+        "address": "2522 LYNDHURST DRIVE",
+        "listingPrice": "$2,389,900",
+        "bedrooms": "5",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property50": {
+        "address": "2197 SHAFTESBURY COURT",
+        "listingPrice": "$2,299,999",
+        "bedrooms": "4 + 2",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property51": {
+        "address": "2045 ROSEMOUNT CRESCENT",
+        "listingPrice": "$2,299,900",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property52": {
+        "address": "2258 ROCHESTER CIRCLE",
+        "listingPrice": "$2,285,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 37
+      },
+      "property53": {
+        "address": "3122 SADDLEWORTH CRESCENT",
+        "listingPrice": "$2,195,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property54": {
+        "address": "1534 CRAIGLEITH ROAD",
+        "listingPrice": "$2,190,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 31
+      },
+      "property55": {
+        "address": "2480 UPPER VALLEY CRESCENT",
+        "listingPrice": "$2,099,900",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 50
+      },
+      "property56": {
+        "address": "1248 BOWMAN DRIVE",
+        "listingPrice": "$2,080,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property57": {
+        "address": "1311 PLAYTER PLACE",
+        "listingPrice": "$2,049,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 45
+      },
+      "property58": {
+        "address": "2172 NORTH RIDGE TRAIL",
+        "listingPrice": "$2,030,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 47
+      },
+      "property59": {
+        "address": "2433 TREVOR DRIVE",
+        "listingPrice": "$2,025,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 32
+      },
+      "property60": {
+        "address": "1339 PELLICAN PASS",
+        "listingPrice": "$1,999,999",
+        "bedrooms": "4 + 1",
+        "bathrooms": "5",
+        "imageCount": 45
+      },
+      "property61": {
+        "address": "130 TAVISTOCK SQUARE",
+        "listingPrice": "$1,999,999",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 48
+      },
+      "property62": {
+        "address": "427 PINEGROVE ROAD",
+        "listingPrice": "$1,999,999",
+        "bedrooms": "5",
+        "bathrooms": "4",
+        "imageCount": 45
+      },
+      "property63": {
+        "address": "1217 IRONBRIDGE ROAD",
+        "listingPrice": "$1,999,000",
+        "bedrooms": "4 + 1",
+        "bathrooms": "6",
+        "imageCount": 50
+      },
+      "property64": {
+        "address": "204 MARY STREET",
+        "listingPrice": "$1,999,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 46
+      },
+      "property65": {
+        "address": "2298 SALCOME DRIVE",
+        "listingPrice": "$1,998,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 49
+      },
+      "property66": {
+        "address": "3339 SKIPTON LANE",
+        "listingPrice": "$1,799,999",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 47
+      },
+      "property67": {
+        "address": "2432 EDWARD LEAVER TRAIL",
+        "listingPrice": "$1,799,900",
+        "bedrooms": "4",
+        "bathrooms": "5",
+        "imageCount": 35
+      },
+      "property68": {
+        "address": "3364 VERNON POWELL DRIVE",
+        "listingPrice": "$1,799,900",
+        "bedrooms": "4 + 2",
+        "bathrooms": "5",
+        "imageCount": 45
+      },
+      "property69": {
+        "address": "54 THRESHING MILL BOULEVARD",
+        "listingPrice": "$1,799,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property70": {
+        "address": "1361 YELLOW ROSE CIRCLE",
+        "listingPrice": "$1,799,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 44
+      },
+      "property71": {
+        "address": "3168 WATERCLIFFE COURT",
+        "listingPrice": "$1,799,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "5",
+        "imageCount": 47
+      },
+      "property72": {
+        "address": "2066 REBECCA STREET",
+        "listingPrice": "$1,790,000",
+        "bedrooms": "3 + 2",
+        "bathrooms": "2",
+        "imageCount": 48
+      },
+      "property73": {
+        "address": "441 WITHNELL CRESCENT",
+        "listingPrice": "$1,775,000",
+        "bedrooms": "3",
+        "bathrooms": "5",
+        "imageCount": 47
+      },
+      "property74": {
+        "address": "2208 BRAYS LANE",
+        "listingPrice": "$1,750,000",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 48
+      },
+      "property75": {
+        "address": "3291 HARASYM TRAIL",
+        "listingPrice": "$1,599,999",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 49
+      },
+      "property76": {
+        "address": "2083 WILLHAVEN TRAIL",
+        "listingPrice": "$1,599,900",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 43
+      },
+      "property77": {
+        "address": "2381 GRAND OAK TRAIL",
+        "listingPrice": "$1,500,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 48
+      },
+      "property78": {
+        "address": "1264 LANDFAIR CRESCENT",
+        "listingPrice": "$1,499,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 43
+      },
+      "property79": {
+        "address": "2440 HOLLYBROOK DRIVE",
+        "listingPrice": "$1,489,999",
+        "bedrooms": "4 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property80": {
+        "address": "2277 BLUE OAK CIRCLE",
+        "listingPrice": "$1,474,998",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 43
+      },
+      "property81": {
+        "address": "523 TERRACE WAY",
+        "listingPrice": "$1,449,000",
+        "bedrooms": "4",
+        "bathrooms": "4",
+        "imageCount": 37
+      },
+      "property82": {
+        "address": "1279 HEDGESTONE CRESCENT S",
+        "listingPrice": "$1,249,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 50
+      },
+      "property83": {
+        "address": "495 TIPPERTON CRESCENT",
+        "listingPrice": "$1,249,000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "imageCount": 41
+      },
+      "property84": {
+        "address": "2140 STILLMEADOW ROAD",
+        "listingPrice": "$1,249,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 48
+      },
+      "property85": {
+        "address": "2228 JILLIAN LANE",
+        "listingPrice": "$1,245,000",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 35
+      },
+      "property86": {
+        "address": "391 MAPLE AVENUE",
+        "listingPrice": "$1,229,000",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "imageCount": 29
+      },
+      "property87": {
+        "address": "1228 PALLATINE DRIVE",
+        "listingPrice": "$1,228,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 40
+      },
+      "property88": {
+        "address": "1969 GLENADA CRESCENT",
+        "listingPrice": "$999,900",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "imageCount": 32
+      },
+      "property89": {
+        "address": "1078 PINEGROVE ROAD",
+        "listingPrice": "$999,900",
+        "bedrooms": "3 + 1",
+        "bathrooms": "2",
+        "imageCount": 33
+      },
+      "property90": {
+        "address": "1209 OLD OAK DRIVE",
+        "listingPrice": "$1,200,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "4",
+        "imageCount": 50
+      },
+      "property91": {
+        "address": "556 TRAFFORD CRESCENT",
+        "listingPrice": "$1,199,900",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "imageCount": 48
+      },
+      "property92": {
+        "address": "394 MAIDSTONE CRESCENT",
+        "listingPrice": "$1,199,900",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "imageCount": 50
+      },
+      "property93": {
+        "address": "3077 NEYAGAWA BOULEVARD",
+        "listingPrice": "$1,199,000",
+        "bedrooms": "3",
+        "bathrooms": "4",
+        "imageCount": 21
+      },
+      "property94": {
+        "address": "2373 WYANDOTTE DRIVE",
+        "listingPrice": "$899,990",
+        "bedrooms": "3 + 1",
+        "bathrooms": "2",
+        "imageCount": 33
+      },
+      "property95": {
+        "address": "3162 STORNOWAY CIRCLE",
+        "listingPrice": "$829,900",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "imageCount": 24
+      },
+      "property96": {
+        "address": "58 ONSLOW COURT",
+        "listingPrice": "$800,000",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "imageCount": 38
+      },
+      "property97": {
+        "address": "392 CRANBROOK COMMON",
+        "listingPrice": "$799,900",
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "imageCount": 45
+      },
+      "property98": {
+        "address": "131 STEWART STREET",
+        "listingPrice": "$799,000",
+        "bedrooms": "3 + 1",
+        "bathrooms": "3",
+        "imageCount": 11
+      },
+      "property99": {
+        "address": "116 - 1538 LANCASTER DRIVE",
+        "listingPrice": "$685,000",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "imageCount": 42
+      },
+      "property100": {
+        "address": "3 ENNISCLARE DRIVE",
+        "listingPrice": "$15,900,000",
+        "bedrooms": "5",
+        "bathrooms": "4",
+        "imageCount": 39
+      }
+    }
+  }
+}

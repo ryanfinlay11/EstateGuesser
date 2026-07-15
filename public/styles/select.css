@@ -117,19 +117,19 @@
 }
 
 #toronto::before {
-  background-image: url("https://media.timeout.com/images/106113952/image.jpg");
+  background-image: url("/images/toronto.webp");
 }
 
 #richmondhill::before {
-  background-image: url("https://i.ibb.co/Tc3SZ8H/Capture-min.png");
+  background-image: url("/images/richmondhill.webp");
 }
 
 #vaughan::before {
-  background-image: url("https://images.contentstack.io/v3/assets/blta87d7fbaeaa63272/blt6938c029106d9bd4/61dc4c569efff26ae759833c/Canada_Vaughan_iStock-1310675407.jpg?auto=webp&format=pjpg&quality=80&width=720&height=720&fit=crop&crop=640:720,smart"); 
+  background-image: url("/images/vaughan.webp");
 }
 
 #oakville::before {
-  background-image: url("https://media.istockphoto.com/id/1283255609/photo/aerial-oakville-townscape-and-bill-hill-promenade-park-at-the-lakeside-of-lake-ontario.jpg?s=612x612&w=0&k=20&c=oj0Xk7i4d2cG0c_CFtqk8i-ICe-Dhl1OLnd0XYFqUHw="); 
+  background-image: url("/images/oakville.webp");
 }
 
 .footer {
@@ -164,7 +164,7 @@
 }
 
 body {
-    background-image: url("https://i.ibb.co/nP0Bsn7/house.jpg");
+    background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

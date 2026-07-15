@@ -36,9 +36,6 @@
     "ui": {
       "enabled": true
     },
-    "singleProjectMode": true,
-    "database": {
-      "port": 9000
-    }
+    "singleProjectMode": true
   }
 }

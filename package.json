@@ -1,0 +1,7 @@
+{
+  "name": "estateguesser",
+  "private": true,
+  "scripts": {
+    "dev": "firebase emulators:start"
+  }
+}
