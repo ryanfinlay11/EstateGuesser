@@ -1,6 +1,9 @@
 const chosenLocation = window.location.pathname.split('/').pop();
 const locations = {'toronto': 'Toronto', 'vaughan': 'Vaughan', 'richmondhill': 'Richmond Hill', 'oakville' : 'Oakville'};
-const currentPropertyVersion = '3';
+const currentPropertyVersion = '4';
+const STORAGE_BASE = 'https://storage.googleapis.com/estateguesser.firebasestorage.app/properties/';
+const ROUNDS = 5;
+const GAME_SECONDS = 5 * 60;
 
 const introModal = getElement('introModal');
 
@@ -25,7 +28,7 @@ const bathroomText = getElement('bathrooms-number-text');
 const inputBox = getElement('price-guess');
 const submitGuessButton = getElement('submit-guess');
 
-let timeLeft = 5 * 60;
+let timeLeft = GAME_SECONDS;
 let interval;
 let currentRound = 1;
 let totalPointsNum = 0;
@@ -86,13 +89,14 @@ function submitGuess() {
     animateScore(roundScore);
     setText(actualPrice, currentProperty.listingPrice);
     setText(userGuess, "$" + inputBox.value);
-    listingUrl.href = currentProperty.url;
+    const mapsQuery = encodeURIComponent(`${currentProperty.address} ${locations[chosenLocation]}`);
+    listingUrl.href = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 
     totalPointsNum += roundScore;
     inputBox.value = '';
     setText(bedroomText, 'Bedroom');
     setText(bathroomText, 'Bathroom');
-    if (currentRound === 5) {
+    if (currentRound === ROUNDS) {
         nextButton.innerHTML = 'See<br>Results';
         nextButton.style.backgroundColor = 'rgb(0, 0, 200)';
     }
@@ -101,7 +105,7 @@ function submitGuess() {
 function next() {
     hide(postRoundModal);
     currentRound++;
-    if (currentRound > 5 || timeLeft <= 0) {
+    if (currentRound > ROUNDS || timeLeft <= 0) {
         hide(timesUpModal);
         show(endGameModal);
         setEndGame();
@@ -114,9 +118,16 @@ function next() {
 //Helper functions
 
 function startRound() {
-    setText(propertyTitle, 'Property ' + currentRound + '/5');
-    const currentProperty = properties[propertyIDs[currentRound - 1]];
-    propertyImgArray = currentProperty.imageUrls;
+    setText(propertyTitle, 'Property ' + currentRound + '/' + ROUNDS);
+    const currentPropertyID = propertyIDs[currentRound - 1];
+    const currentProperty = properties[currentPropertyID];
+    // Build the image paths from the count: properties/{location}/property{N}/{i}.webp
+    propertyImgArray = [];
+    for (let i = 0; i < currentProperty.imageCount; i++) {
+        propertyImgArray.push(`${chosenLocation}/property${currentPropertyID}/${i}.webp`);
+    }
+    // Preload all of this property's images so cycling through them is instant
+    propertyImgArray.forEach(function(p) { const img = new Image(); img.src = STORAGE_BASE + p; });
     currentImageIndex = 0;
     setImage(propertyImgArray[currentImageIndex]);
     setText(bedroomNum, currentProperty.bedrooms.replace(/\s/g, ''));
@@ -135,7 +146,7 @@ async function getProperties() {
     //If this map has never been played before, initialize occurance array
     let occuranceArray = JSON.parse(localStorage.getItem(chosenLocation));
     if (!occuranceArray) {
-        occuranceArray = new Array(100 + 1).fill(0);
+        occuranceArray = [];
         localStorage.setItem(chosenLocation, JSON.stringify(occuranceArray));
     }
     //Get 2 sets of 5 properties from server
@@ -154,8 +165,8 @@ async function getProperties() {
     const data2PropertyNums = Object.keys(data2);
     let occuranceScore1 = 0;
     let occuranceScore2 = 0;
-    for (let i = 0; i < 5; i++) occuranceScore1 += occuranceArray[data1PropertyNums[i]];
-    for (let i = 0; i < 5; i++) occuranceScore2 += occuranceArray[data2PropertyNums[i]];
+    for (let i = 0; i < ROUNDS; i++) occuranceScore1 += (occuranceArray[data1PropertyNums[i]] || 0);
+    for (let i = 0; i < ROUNDS; i++) occuranceScore2 += (occuranceArray[data2PropertyNums[i]] || 0);
     if (occuranceScore1 <= occuranceScore2) {
         properties = data1;
         updateOccuranceArray(occuranceArray, data1PropertyNums);
@@ -216,8 +227,8 @@ function addText(element, text){
     element.textContent += text;
 }
 
-function setImage(url) {
-    propertyImage.src = "https://cdn.realtor.ca/listing/" + url;
+function setImage(path) {
+    propertyImage.src = STORAGE_BASE + path;
 }
 
 function setEndGame() {
@@ -239,7 +250,7 @@ function setEndGame() {
 }
 
 function updateOccuranceArray(occuranceArray, propertyNums) {
-    for (let i = 0; i < 5; i++) occuranceArray[propertyNums[i]]++;
+    for (let i = 0; i < ROUNDS; i++) occuranceArray[propertyNums[i]] = (occuranceArray[propertyNums[i]] || 0) + 1;
     localStorage.setItem(chosenLocation, JSON.stringify(occuranceArray));
 }
 
@@ -336,17 +347,21 @@ function shuffleArray(array) {
 }
 
 async function logData(type) {
-    const ip = await fetch('https://api.ipify.org?format=json').then(result => result.json()).then(data => data.ip);
-    const agent = /\(([^)]+)\)/.exec(navigator.userAgent);
-    let data = {
-        type: type,
-        ip: '**' + ip + '**',
-        agent: '**' + agent[1] + '**',
-        location: '**' + chosenLocation + '**',
-        score: '0'
-    };
-    if (type === 'end') data.score = '**' + totalPointsNum + '**';
     try {
+        let ip = 'unknown';
+        try {
+            ip = await fetch('https://api.ipify.org?format=json').then(result => result.json()).then(data => data.ip);
+        } catch (err) { /* ip lookup blocked (e.g. adblocker); leave as unknown */ }
+        const agentMatch = /\(([^)]+)\)/.exec(navigator.userAgent);
+        const agent = agentMatch ? agentMatch[1] : 'unknown';
+        let data = {
+            type: type,
+            ip: '**' + ip + '**',
+            agent: '**' + agent + '**',
+            location: '**' + chosenLocation + '**',
+            score: '0'
+        };
+        if (type === 'end') data.score = '**' + totalPointsNum + '**';
         await fetch('/api/log/', {
             method: 'POST',
             headers: {
@@ -372,7 +387,7 @@ function error(message) {
 }
 
 inputBox.addEventListener('input', function() {
-    let value = this.value.replace(/[^0-9]/g, '').substr(0, 9);
+    let value = this.value.replace(/[^0-9]/g, '').slice(0, 9);
     if (value) {
         value = parseFloat(value).toLocaleString('en-US', { maximumFractionDigits: 0 });
         submitGuessButton.removeAttribute('disabled');
@@ -383,7 +398,7 @@ inputBox.addEventListener('input', function() {
 });
 
 document.addEventListener('keydown', function(event) {
-    if (isKeyPressed | !timerGoing) return;
+    if (isKeyPressed || !timerGoing) return;
     switch (event.key) {
         case 'ArrowLeft':
             changeImage('left');
@@ -399,7 +414,7 @@ document.addEventListener('keyup', function() {
     isKeyPressed = false;
 });
 
-document.querySelector('input').addEventListener('keydown', function(event) {
+inputBox.addEventListener('keydown', function(event) {
     var arrowKeys = [37, 39];  // Key codes for left and right arrow keys
     if (arrowKeys.includes(event.keyCode)) {
         event.preventDefault();
